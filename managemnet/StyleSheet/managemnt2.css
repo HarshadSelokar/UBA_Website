@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffdf0;
+    color: #333;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: #f5c400;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.541);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 2px 9px rgba(18, 16, 138, 0.836);
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .card h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #001840;
+  }
+  
+  #villages{
+
+    cursor: pointer;
+  }
+  .card h4 {
+    margin: 0 0 10px;
+    font-size: 8px;
+    color: #001840;
+  }
+  
+  .card p {
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    color: #001840;
+    margin-top: 0.5rem;
+    text-align:justify;
+  }
+  
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 20px;
+    }
+  
+    .card {
+      padding: 15px;
+    }
+  
+    .card h3 {
+      font-size: 16px;
+    }
+  
+    .card p {
+      font-size: 13px;
+    }
+  }

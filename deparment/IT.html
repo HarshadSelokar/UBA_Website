@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>information Technology</title>
+  <link rel="stylesheet" href="..\StyleSheet\IT.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/College_Information/College_Logo.png" />
+</head>
+
+<body>
+   <!--UBA And College Name Plates-->
+   <header class="College_Mission_Info">
+    <div class="College_Logo">
+      <img
+        src="../images/college/logo.jpg"
+        alt="College_Logo"
+      />
+    </div>
+    <div class="College_NamePlate">
+      <h1>Unnat Bharat Abhiyan</h1>
+
+      <p>
+        <b>ST. VINCENT PALLOTTI COLLAGE OF ENGEENIRING AND TECHNOLOGY</b>
+        <br /><span>An Autonomous Institute</span>
+      </p>
+    </div>
+    <div class="UBA_Logo">
+      <img
+        src="../images/College_Information/UBA_Logo.png"
+        alt="College_NamePlate"
+      />
+    </div>
+  </header>
+  <nav>
+    <div class="container1" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
+    <ul id="Open_Mobile">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../visit/visit.html">Visits Gallery</a></li>
+      <li><a href="./temp.html">Projects</a></li>
+      <li><a href="../deparment/index.html">Department</a></li>
+
+      <select name="villages" id="villages" onchange="openVillageLink()">
+        <option value="" disabled selected>Adopt Villages</option>
+        <option value="../vilages/GavsiManapur.html">01. Gavsi Manapur</option>
+        <option value="../vilages/Dongargaon.html">02. Dongargaon</option>
+        <option value="../vilages/Khatmari.html">03. Khatmari</option>
+        <option value="../vilages/PanjariLodhi.html">04. Panjari</option>
+        <option value="../vilages/Khasarmari.html">05. Khasarmari</option>
+      </select>
+
+
+      <li><a href="../managemnet/contact.html">Contact us</a></li>
+    </ul>
+  </nav>
+
+  
+
+  <!-- DPT-SECTION -->
+  <section class="d-section">
+    <div class="option">
+      <div class="box">
+        <a href="..\deparment\ce.html"><img src="..\images\dpt-pg-assets\ce-img.png" alt="" /></a>
+      </div>
+      <div class="box">
+        <a href="..\deparment\IT.html"><img src="..\images\dpt-pg-assets\it-img.png" alt="" /></a>
+      </div>
+      <div class="box">
+        <a href="..\deparment\me.html"><img src="..\images\dpt-pg-assets\me-img.png" alt="" /></a>
+      </div>
+      <div class="box">
+        <a href="..\deparment\cvl.html"><img src="..\images\dpt-pg-assets\cvl-img.png" alt="" /></a>
+      </div>
+      <div class="box">
+        <a href="..\deparment\etc.html"><img src="..\images\dpt-pg-assets\etc-img.png" alt="" /></a>
+      </div>
+      <div class="box">
+        <a href="..\deparment\ee.html"><img src="..\images\dpt-pg-assets\ee-img.png" alt="" /></a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <div id="sidebar" class="close">
+    <ul>
+      <li>
+        <span class="logo">Menu</span>
+        <button onclick=toggleSidebar() id="toggle-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <path
+              d="m313-480 155 156q11 11 11.5 27.5T468-268q-11 11-28 11t-28-11L228-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 27.5-11.5T468-692q11 11 11 28t-11 28L313-480Zm264 0 155 156q11 11 11.5 27.5T732-268q-11 11-28 11t-28-11L492-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 27.5-11.5T732-692q11 11 11 28t-11 28L577-480Z" />
+          </svg>
+        </button>
+      </li>
+
+
+      <li>
+        <button onclick=toggleSubMenu(this) class="dropdown-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <path
+              d="M240-200h120v-200q0-17 11.5-28.5T400-440h160q17 0 28.5 11.5T600-400v200h120v-360L480-740 240-560v360Zm-80 0v-360q0-19 8.5-36t23.5-28l240-180q21-16 48-16t48 16l240 180q15 11 23.5 28t8.5 36v360q0 33-23.5 56.5T720-120H560q-17 0-28.5-11.5T520-160v-200h-80v200q0 17-11.5 28.5T400-120H240q-33 0-56.5-23.5T160-200Zm320-270Z" />
+          </svg>
+          <span>About Project</span>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <path
+              d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z" />
+          </svg>
+        </button>
+        <ul class="sub-menu">
+          <div>
+            <li><a onclick="showProject('section-a')">Edusahayog App</a></li>
+            <!-- <li><a onclick="showProject('section-b')">Seed Sowing Bot</a></li> -->
+          </div>
+        </ul>
+      </li>
+
+
+      <li>
+        <a href="project-document.html">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <path
+              d="M520-640v-160q0-17 11.5-28.5T560-840h240q17 0 28.5 11.5T840-800v160q0 17-11.5 28.5T800-600H560q-17 0-28.5-11.5T520-640ZM120-480v-320q0-17 11.5-28.5T160-840h240q17 0 28.5 11.5T440-800v320q0 17-11.5 28.5T400-440H160q-17 0-28.5-11.5T120-480Zm400 320v-320q0-17 11.5-28.5T560-520h240q17 0 28.5 11.5T840-480v320q0 17-11.5 28.5T800-120H560q-17 0-28.5-11.5T520-160Zm-400 0v-160q0-17 11.5-28.5T160-360h240q17 0 28.5 11.5T440-320v160q0 17-11.5 28.5T400-120H160q-17 0-28.5-11.5T120-160Zm80-360h160v-240H200v240Zm400 320h160v-240H600v240Zm0-480h160v-80H600v80ZM200-200h160v-80H200v80Zm160-320Zm240-160Zm0 240ZM360-280Z" />
+          </svg>
+          <span>Project Aproved Document</span>
+
+        </a>
+      </li>
+
+      <li>
+        <button onclick=toggleSubMenu(this) class="dropdown-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <path
+              d="m221-313 142-142q12-12 28-11.5t28 12.5q11 12 11 28t-11 28L250-228q-12 12-28 12t-28-12l-86-86q-11-11-11-28t11-28q11-11 28-11t28 11l57 57Zm0-320 142-142q12-12 28-11.5t28 12.5q11 12 11 28t-11 28L250-548q-12 12-28 12t-28-12l-86-86q-11-11-11-28t11-28q11-11 28-11t28 11l57 57Zm339 353q-17 0-28.5-11.5T520-320q0-17 11.5-28.5T560-360h280q17 0 28.5 11.5T880-320q0 17-11.5 28.5T840-280H560Zm0-320q-17 0-28.5-11.5T520-640q0-17 11.5-28.5T560-680h280q17 0 28.5 11.5T880-640q0 17-11.5 28.5T840-600H560Z" />
+          </svg>
+          <span>Team</span>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <path
+              d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z" />
+          </svg>
+        </button>
+        <ul class="sub-menu">
+          <div>
+            <li><a onclick="showSection('b-24')">2024</a></li>
+            <li><a onclick="showSection('b-25')">2025</a></li>
+            <li><a onclick="showSection('b-26')">2026</a></li>
+            <!-- <li><a onclick="showSection('b-22')">2027</a></li> -->
+
+          </div>
+        </ul>
+      </li>
+      <li>
+        <a href="photos.html">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <path
+              d="M520-640v-160q0-17 11.5-28.5T560-840h240q17 0 28.5 11.5T840-800v160q0 17-11.5 28.5T800-600H560q-17 0-28.5-11.5T520-640ZM120-480v-320q0-17 11.5-28.5T160-840h240q17 0 28.5 11.5T440-800v320q0 17-11.5 28.5T400-440H160q-17 0-28.5-11.5T120-480Zm400 320v-320q0-17 11.5-28.5T560-520h240q17 0 28.5 11.5T840-480v320q0 17-11.5 28.5T800-120H560q-17 0-28.5-11.5T520-160Zm-400 0v-160q0-17 11.5-28.5T160-360h240q17 0 28.5 11.5T440-320v160q0 17-11.5 28.5T400-120H160q-17 0-28.5-11.5T120-160Zm80-360h160v-240H200v240Zm400 320h160v-240H600v240Zm0-480h160v-80H600v80ZM200-200h160v-80H200v80Zm160-320Zm240-160Zm0 240ZM360-280Z" />
+          </svg><span>Photos</span>
+
+
+
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <section class="com">
+    <h1>DEPARTMENT OF INFORMATION TECHNOLOGY</h1>
+
+    <div class="com-img">
+      <img class="com-img1" src="..\images\it\14.jpeg" alt="" />
+    </div>
+  </section>
+  <!-- Virtual Doctor -->
+  <section class="content">
+    <section id="section-a" class="section active">
+      <div class="ce1">
+          <h2 style="text-align: center">
+              With this app, rural education is revolutionized by providing a comprehensive platform for managing educational resources, fostering motivation, and increasing awareness of government schemes. Module details are as follows:
+          </h2>
+        <div class="info-block">
+          <div class="info-img">
+            <img class="info-img1" src="..\images\it\it-app.png" alt="" />
+          </div>
+          <div class="info">
+            <ol type="1">
+              <li type="1">
+                <b>Role-Based Login</b><br />
+                <span>The app provides secure, role-specific access for students and teachers.</span>
+                <ul style="font-size: 0.8rem; margin: 0.5rem;">
+                  <li style="list-style-type: disc;"><b>Students: </b> Can view personal goals, study materials, and achievements.</li>
+                  <li style="list-style-type: disc;"><b>Teachers: </b> Can manage attendance, upload resources, and track student progress.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>Study Material</b><br />Teachers can upload PDFs, images, and videos, enabling students to access educational resources anytime, enhancing their learning experience.
+              </li>
+              <li>
+                <b>Motivational Quotes</b><br />A curated collection of motivational quotes is displayed to inspire students and promote a positive learning mindset.
+              </li>
+              <li>
+                <b>Yojanas</b><br />This module enables users to explore educational government schemes and initiatives, helping rural students and families access opportunities.
+              </li>
+              <li>
+                <b>Achievements</b><br />Teachers can post and share student accomplishments, fostering pride and recognition in the community.
+              </li>
+              <li>
+                <b>Attendance Management</b><br />The app features an efficient attendance system with automated date and time records, simplifying attendance tracking for teachers.
+              </li>
+              <li>
+                <b>Achievements</b><br />Teachers can post updates about school events, deadlines, and notices, ensuring students and parents are always informed.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!--Seed Sowing -->
+    <section id="section-b" class="section">
+      <div class="ce1">
+        <h2 style="text-align: center">
+          Description of Project
+With this project, users can streamline the process of seed sowing with enhanced efficiency and precision. Module details are as follows:
+        </h2>
+
+        <div class="info-block">
+          <div class="info-img">
+            <img class="it-app.png" src="#" alt=""/>
+          </div>
+          <div class="info">
+            <ol type="1">
+              <li type="1">
+                <b>Automated Seed Sowing</b><br />The bot sows seeds systematically, ensuring optimal spacing and depth for better crop growth.
+              </li>
+              <li>
+                <b>Remote Control</b><br />Users can control the bot remotely using a dedicated app or interface for field operations.
+              </li>
+              <li>
+                <b>Navigation and Mapping</b><br />The bot uses sensors and mapping technology to navigate fields and cover designated areas.
+              </li>
+              <li>
+                <b>Adjustable Seed Parameters</b><br />Parameters like seed type, sowing rate, and depth can be adjusted according to user requirements.
+              </li>
+              <li>
+                <b>Real-time Monitoring</b><br />Provides real-time updates on the sowing process, including areas covered and time remaining.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>  
+
+  <!-- <div id="scrollDiv" class="scroll-div">
+        <div class="ftr">
+            <input type="checkbox" class="checkbox" id="menu-toggle" />
+            <span class="button-menu"></span>
+      
+            <button class="option-a opt" onclick="showSection('section-a')">Doctor Module</button>
+            <button class="option-b opt" onclick="showSection('section-b')">Pharmacy Module</button>
+            <button class="option-c opt" onclick="showSection('section-c')">Patient Module</button>
+          </div>
+    </div> -->
+
+
+
+  <!-- student section -->
+  <section class="student-section">
+    <!-- 2024 -->
+    <div id="b-24" class="ss-div active">
+      <p>2024 Pass Out Team</p>
+    <div class="block">
+      <div class="student">
+        <img class="img-s" src="..\images\it\4th yr IT\Samuel Rodrigues.jpg" alt="student-img">
+        <h3>
+          Samuel Rodrigues
+        </h3>
+      </div>
+
+      <div class="student">
+        <img class="img-s" src="..\images\it\4th yr IT\Mohit Bandawar.jpg" alt="student-img">
+        <h3>
+          Mohit Bandawar
+        </h3>
+      </div>
+
+      <div class="student">
+        <img class="img-s" src="..\images\it\4th yr IT\Devyani Makade.jpg" alt="student-img">
+        <h3>
+          Devyani Makade
+        </h3>
+      </div>
+
+      <div class="student">
+        <img class="img-s" src="..\images\it\4th yr IT\Dipmala Kathale (Coordinator).jpg" alt="student-img">
+        <h3>
+          Dipmala Kathale
+        </h3>
+      </div>
+
+      <div class="student">
+        <img class="img-s" src="..\images\it\4th yr IT\Janhavi Badwaik.jpg" alt="student-img">
+        <h3>
+          Janhavi Badwaik
+        </h3>
+      </div>
+
+      <div class="student">
+        <img class="img-s" src="..\images\it\4th yr IT\Rutuja Hande.jpg" alt="student-img">
+        <h3>
+          Rutuja Hande
+        </h3>
+      </div>
+
+      <div class="student">
+        <img class="img-s" src="..\images\it\4th yr IT\Saurav Nerkar (Co-cordinator).jpg" alt="student-img">
+        <h3>
+          Saurav Nerkar 
+        </h3>
+      </div>
+      <div class="student">
+        <img class="img-s" src="..\images\it\4th yr IT\Shruti Jiwane.jpg" alt="student-img">
+        <h3>
+          Shruti Jiwane
+        </h3>
+      </div>
+
+      <div class="student">
+        <img class="img-s" src="..\images\it\4th yr IT\Siddharth Supekar.jpg" alt="student-img">
+        <h3>
+          Siddharth Supekar
+        </h3>
+      </div>
+
+
+    </div>
+    </div>
+
+    <!-- 2025 -->
+    <div id="b-25" class="ss-div">
+      <p>2025 Batch Team</p>
+    <div class="block">
+      <div class="student">
+        <img class="img-s" src="..\images\it\3rd yr IT\Ishan Sathawane.jpg" alt="student-img">
+        <h3>
+          Ishan Sathawane
+        </h3>
+      </div>
+
+      <div class="student">
+        <img class="img-s" src="..\images\it\3rd yr IT\Kushal khadgi.jpg" alt="student-img">
+        <h3>
+          Kushal khadgi
+        </h3>
+      </div>
+
+      <div class="student">
+        <img class="img-s" src="..\images\it\3rd yr IT\Manthan Raut.jpg" alt="student-img">
+        <h3>
+          Manthan Raut
+        </h3>
+      </div>
+
+      <div class="student">
+        <img class="img-s" src="..\images\it\3rd yr IT\Nakul Wanjari.jpg" alt="student-img">
+        <h3>
+          Nakul Wanjari
+        </h3>
+      </div>
+
+      <div class="student">
+        <img class="img-s" src="..\images\it\3rd yr IT\Rohit Rangari.jpg" alt="student-img">
+        <h3>
+          Rohit Rangari
+        </h3>
+      </div>
+
+      <div class="student">
+        <img class="img-s" src="..\images\it\3rd yr IT\Rushabh Katekhaye.jpg" alt="student-img">
+        <h3>
+          Rushabh Katekhaye
+        </h3>
+      </div>
+
+      <div class="student">
+        <img class="img-s" src="..\images\it\3rd yr IT\Saurabh Chaudhari.jpg" alt="student-img">
+        <h3>
+          Saurabh Chaudhari
+        </h3>
+      </div>
+
+      
+      <div class="student">
+        <img class="img-s" src="..\images\it\3rd yr IT\Simran Daultani.jpg" alt="student-img">
+        <h3>
+          Simran Daultani
+        </h3>
+      </div>
+      <div class="student">
+        <img class="img-s" src="..\images\it\3rd yr IT\Tanushree Datey.jpg" alt="student-img">
+        <h3>
+          Tanushree Datey
+        </h3>
+      </div>
+    </div>
+    </div>
+<!-- 2026 -->
+
+<div id="b-26" class="ss-div">
+  <p>2026 Batch Team</p>
+<div class="block">
+  <div class="student">
+    <img class="img-s" src="..\images\it\2nd yr IT\Harshal Aglawe.png" alt="student-img">
+    <h3>
+      Harshal Aglawe
+    </h3>
+  </div>
+
+  <div class="student">
+    <img class="img-s" src="..\images\it\2nd yr IT\Harshal Kawadse.jpg" alt="student-img">
+    <h3>
+      Harshal Kawadse
+    </h3>
+  </div>
+
+  <div class="student">
+    <img class="img-s" src="..\images\it\2nd yr IT\Sarthak Khadse.jpg" alt="student-img">
+    <h3>
+      Sarthak Khadse
+    </h3>
+  </div>
+
+  <div class="student">
+    <img class="img-s" src="..\images\it\2nd yr IT\Vaishnavi Butle.jpg" alt="student-img">
+    <h3>
+      Vaishnavi Butle
+    </h3>
+  </div>
+
+</div>
+</div>
+
+  </section>
+
+
+
+  <footer>
+    <div class="College_Details">
+      <b>CONTACT US</b><br><br>Address : Student Activity  Center, Unnat Bharat Abhiyan ,<br>
+      STVPCET <br> Phone : (+91) +91 - 9423683433<br>Email : uba@svpcet.edu.in
+    </div>
+    <div class="Links">
+      <b>USEFUL LINK</b>
+      <br>
+      <br>
+        <a href="https://www.stvincentngp.edu.in/">SVPCET</a><br>
+        <a href="../index.html">UBA SVPCET</a><br>
+        <a href="">Faculty</a><br>
+        <a href="./deparment/index.html">Student Team</a><br>
+        <a href="./managemnet/management.html">Management Perspectives</a><br>
+        <a href="./managemnet/contact.html">Contact Us</a>
+    </div>
+    <div class="Links">
+      <b>UBA SOCIAL MEDIA </b><br>
+      <br>
+      <a href="">Twitter</a> <br>
+      <a href="https://www.facebook.com/stvincentngp/">Facebook</a><br>
+      <a href="https://www.instagram.com/svpcetnagpur">Instagram</a><br>
+      <a href="https://twitter.com/techpallottines">Youtube</a>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12122.748894828701!2d79.04498698134455!3d21.00251584390992!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bdc6b03bfded%3A0x51964eb66fa3ec5e!2sSt.%20Vincent%20Pallotti%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1735664081310!5m2!1sen!2sin"></iframe>
+  </footer>
+    <div class="Footer_Copyright"> copyright &copy; 2024 all rights reserved | designed by uba Students club 2024 | svpcet</div>
+
+    <script src="..\managemnet\JavaScript\Menu_Nevigation.js"></script>
+  <script>
+    function showSection(DivId) {
+      // Hide all sections
+      const batch = document.querySelectorAll(".ss-div");
+      batch.forEach((div) => {
+        div.classList.remove("active");
+      });
+
+
+      // Show the selected section with animation
+      const selectedbatch = document.getElementById(DivId);
+      if (selectedbatch) {
+        
+        selectedbatch.classList.add("active");
+
+      }
+
+      // // Close the FAB menu
+      // document.getElementById("menu-toggle").checked = false;
+    }
+
+    function showProject(SectionId) {
+      // Hide all sections
+      const project = document.querySelectorAll(".section");
+      project.forEach((section) => {
+        section.classList.remove("active");
+      });
+
+      // Show the selected section with animation
+      const selectedproject = document.getElementById(SectionId);
+      if (selectedproject) {
+        
+        selectedproject.classList.add("active");
+
+      }
+
+      // // Close the FAB menu
+      // document.getElementById("menu-toggle").checked = false;
+    }
+
+    //   scrolling button
+
+    window.addEventListener('scroll', function () {
+      const scrollDiv = document.getElementById('sidebar');
+      if (window.scrollY > 1000 && window.scrollY < 2300) {
+        scrollDiv.style.display = 'block';
+      } else {
+        scrollDiv.style.display = 'none';
+      }
+    });
+
+    // function toggleDisplay() {
+    //     // Get all elements with the class 'toggle-div'
+    //     const divs = document.querySelectorAll('.m-sider');
+    //     divs.forEach(div => {
+    //       // Check the current display style and toggle between 'none' and 'flex'
+    //       if (div.style.display === 'none' || div.style.display === '') {
+    //         div.style.display = 'flex';
+    //       } else {
+    //         div.style.display = 'none';
+    //       }
+    //     });
+    //   }
+
+    //   // Add click event listener to the SVG icon
+    //   const icon = document.querySelector('.icon');
+    //   icon.addEventListener('click', toggleDisplay);
+
+
+
+    const toggleButton = document.getElementById('toggle-btn')
+    const sidebar = document.getElementById('sidebar')
+
+    function toggleSidebar() {
+      sidebar.classList.toggle('close')
+      toggleButton.classList.toggle('rotate')
+
+      closeAllSubMenus()
+    }
+
+    function toggleSubMenu(button) {
+
+      if (!button.nextElementSibling.classList.contains('show')) {
+        closeAllSubMenus()
+      }
+
+      button.nextElementSibling.classList.toggle('show')
+      button.classList.toggle('rotate')
+
+      if (sidebar.classList.contains('close')) {
+        sidebar.classList.toggle('close')
+        toggleButton.classList.toggle('rotate')
+      }
+    }
+
+    function closeAllSubMenus() {
+      Array.from(sidebar.getElementsByClassName('show')).forEach(ul => {
+        ul.classList.remove('show')
+        ul.previousElementSibling.classList.remove('rotate')
+      })
+    }
+
+
+
+  </script>
+</body>
+
+</html>

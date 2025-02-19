@@ -1,0 +1,432 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-------------------------------------------- Custom Css -------------------------------------------------------->
+    <link rel="stylesheet" href="style.css">    
+    <!---------------------------------------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="responsive-style.css">
+    <!---------------------------------------------------------------------------------------------------------------->
+    <!------------------------ AOS JS CSS CDN ------------------------------------------------------------------------>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!---------------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------- Bootstrap CSS CDN ---------------------------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+    <!----------------------------------------------------------------------------------------------------------------->
+</head>  
+
+<body> 
+
+<!---------------------------------------------  Progress Bar ---------------------------------------------------------->    
+<div id="progress">
+    <span id="progress-value">&#x1F815</span>
+    <script>
+let calcScrollValue = () => {
+let scrollProgress = document.getElementById("progress");
+let progressValue = document.getElementById("progress-value");
+let pos = document.documentElement.scrollTop;
+let calcHeight =
+document.documentElement.scrollHeight -
+document.documentElement.clientHeight;
+let scrollValue = Math.round((pos * 100) / calcHeight);
+if (pos > 100) {
+scrollProgress.style.display = "grid";
+} else {
+scrollProgress.style.display = "none";
+}
+scrollProgress.addEventListener("click", () => {
+document.documentElement.scrollTop = 0;
+});
+scrollProgress.style.background = `conic-gradient(#d3d3d3 ${scrollValue}%, #17a2b8 ${scrollValue}%)`;
+};
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
+
+</script>
+</div>   
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+
+
+<!------------------------------------ Nav Bar --------------------------------------------------------------------------------------------------->
+
+<div class="navigation">
+    <nav class="navbar  navbar-expand-lg custom_nav ">
+    <div class="container logo">
+    <a href="#" class="navbar-brand">
+      <!-- Logo Image -->
+      <img src="images/logo.jpg" data-aos="fade-right">
+      <!-- Logo Text -->
+    </a>
+
+    <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span style="color:black"><i class="fa fa-bars"></i></span></button>
+
+    <div id="navbarSupportedContent" class="collapse navbar-collapse div_ul">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a href="index.html" class="nav-link text-dark ">Home</a></li>
+        <!-- <li class="nav-item"><a href="team.html" class="nav-link text-dark">Team </a></li> -->
+        <li class="nav-item"><a href="visits.html" class="nav-link text-dark">Visits</a></li>
+        <li class="nav-item active"><a href="gallery.html" class="nav-link text-dark" >Gallery</a></li>
+        <li class="nav-item"><a href="project.html" class="nav-link text-dark">Projects</a></li>
+        <div class="dropdown">
+            <li class="dropdown-toggle mt-2" type="" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor:pointer;">
+              Departments
+            </li>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="ce.html">Computer Engineering</a>
+              <a class="dropdown-item" href="etc.html">Electronic & Telecommunication Engineering</a>
+              <a class="dropdown-item" href="it.html">Information Technology</a>
+              <a class="dropdown-item" href="ee.html">Electrical Engineering</a>
+              <a class="dropdown-item" href="civil.html">Civil Engineering</a>
+              <a class="dropdown-item" href="me.html">Mechenical Engineering</a>
+            </div>
+          </div>
+        <li class="nav-item"><a href="contact-us.html" class="nav-link text-dark">Contact-Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+
+
+
+<!------------------------  Banner Section ------------------------------------------------------------------------------------------------------->
+
+<!------------------------  Banner Section ------------------------------------------------------------------------------------------------------->
+<div class="events-banner">
+    <div class="container mt-5 text-center" style="background:white;">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="pt-5 event-banner-heading text-info"> Information Technology Department </h2>
+            </div>
+        </div>
+
+        <div id="slides" class="carousel slide" data-ride="carousel" data-interval="2500"> 
+            <ul class="carousel-indicators">
+              <li data-target="#slides" data-slide-to="0" class="active"></li>
+              <li data-target="#slides" data-slide-to="0"></li>
+              <li data-target="#slides" data-slide-to="0"></li>
+            </ul>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/logo.jpg" class="mx-auto d-block" width=40%>
+                <!-- <div class="carousel-caption">
+                  <h1 class="display-4">Unnat Bharat Abhiyan.</h1>
+                </div> -->
+              </div>
+              <div class="carousel-item">
+                <img src="images/poster2.jpg" class="mx-auto d-block" width=40%>
+                <!-- <div class="carousel-caption">
+                  <h1 class="display-4">Unnat Bharat Abhiyan, SVPCET.</h1>
+                </div> -->
+              </div>
+              <div class="carousel-item">
+                <img src="images/poster1.jpg" class="mx-auto d-block" width=40%>
+                <!-- <div class="carousel-caption">
+                  <h1 class="display-4">A Student Community.</h1>
+                </div> -->
+              </div>
+            </div>
+            </div>
+
+
+
+        <div class="row pt-5">
+            <div class="col-md-12">
+                <p  data-aos="fade-in" style="font-size: 30px;"> Krishi Viman</p>
+                <p  data-aos="fade-in">The environment in the Vidarbha region
+                    is not predictable for farming. Certainty of rainfall and
+                    appropriate environmental conditions are necessary for
+                    optimum plant growth and improved crop yields. In the
+                    conventional cultivation system, the farmer has to keep 
+                    watch on proper rain & light intensity, which is different
+                    for different crops. The dearth of water and uncertainty in
+                    rainfall in the Vidarbha region are the prime reasons for
+                    low /no crops. This situation is persisting from year to year.
+                    The farmers take loans to get rid of this and could not pay
+                    in time. These are the reasons for their suicide under
+                    depression. If technology could assist in creating
+                    appropriate environmental conditions required for the
+                    crops, farmers will improve the crop yield and become
+                    economically strong. Hence the proposed project will
+                    
+                    produce the ultimate solution for development & time-
+                    saving for the villagers and be less emergent too. To make
+                    
+                    this drone our essentials/requirements are a DJI pro drone
+                    with a pre-installed mini camera in it the camera will be up
+                    to (3.2-20 MP) that it determines from analog to digital
+                    with various prices up (to 20-30k). A simple tank will be
+                    connected to the drone up to a 4-5 L Tank and its price
+                    max. goes up to (6-8k) determines by it’s company &
+                    remaining that are sprinklers, pipes & fillers varies approx
+                    (3-4k). An operator of this drone can easily cover up to 3
+                    acres of land within just (15-20min). As well as the battery
+                    of the drone gets recharged within (30-40min). Hence the
+                    main advantage is that it reduces the wastage of
+                    fertilizers/water, and time & saves the farmers from some
+                    type of harmful pesticides too (low-risk exposure). It is
+                    embedded with obstacle radar which reduces the chances of
+                    accidents & damage.</p>
+                <!-- <div class="pt-4">
+                      <button class="btn btn-info"> Enroll-Now <i class="fa fa-external-link"></i></button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<style>
+    .justify-content-left{
+        text-align: left;
+    }
+    .events-banner{
+     background-image:url('images/mainbgimg1.gif');
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-attachment: fixed;
+       width: 100%;
+       height: auto;
+    }
+
+    .event-banner-heading{
+       animation: eventHeading 1s ease-in-out;
+    }
+    @keyframes eventHeading{
+from{
+opacity :0;
+transform: translateX(-300px);
+}
+to{
+opacity: 1;
+ }
+}
+
+@media only screen and (max-width:991px){
+.events-banner h2{
+font-size: 25px;
+font-weight: bold;
+}
+
+}
+    
+</style>
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+
+
+
+
+
+
+
+
+
+
+<!------------------------  Banner Section ------------------------------------------------------------------------------------------------------->
+
+<div class="team-banner">
+    <div class="container text-center" style="background:white;padding-top:50px; padding-bottom:60px;">
+          <div class="row pt-5 pb-5 team-banner-row1">
+                <div class="col-md-12">
+                    <h2 class="text-info pt-5 pb-5 team-banner-heading"> Team Members </h2>
+                </div>
+          </div>
+          <div class="row team-banner-row2">
+            <div class="col-md-4  pt-5" id="heading">
+                <img class="img-fluid d-block mb-3 mx-auto rounded-circle" alt="Card image cap" width="200" " src="images/it/Dipmala kathale (co-ordinator).jpg"
+                data-aos="fade-up">
+                <h4 class="text-info"> <b>Dipmala Kathale</b> </h4>
+                <!-- <div>
+                    <a class="link" href="#" style="font-size:20px;"><i class="fa fa-linkedin-square  p-3 text-dark" aria-hidden="true"></i></a>
+                    <a class="link" href="#" style="font-size:20px;"><i class="fa fa-instagram  p-3 text-dark" aria-hidden="true"></i></a>
+                </div> -->
+            </div>
+            <div class="col-md-4" id="heading">
+                <img class="img-fluid d-block mb-3 mx-auto rounded-circle" alt="Card image cap" width="200" style="margin-top: 10px;" src="images/it/saurva.jpg"
+                data-aos="fade-up">
+                <h4 class="text-info"> <b>Saurav Nerkar</b> </h4>
+                <!-- <div>
+                    <a class="link" href="#" style="font-size:20px;"><i class="fa fa-linkedin-square  p-3 text-dark" aria-hidden="true"></i></a>
+                    <a class="link" href="#" style="font-size:20px;"><i class="fa fa-instagram  p-3 text-dark" aria-hidden="true"></i></a>
+                </div> -->
+            </div>
+            <div class="col-md-4" id="heading">
+                <img class="img-fluid d-block mb-3 mx-auto rounded-circle" alt="Card image cap" width="200" style="margin-top: 10px;" src="images/it/janvi.jpg"
+                data-aos="fade-up">
+                <h4 class="text-info"> <b>Janhvi Badwaik</b> </h4>
+                <!-- <div>
+                    <a class="link" href="#" style="font-size:20px;"><i class="fa fa-linkedin-square  p-3 text-dark" aria-hidden="true"></i></a>
+                    <a class="link" href="#" style="font-size:20px;"><i class="fa fa-instagram  p-3 text-dark" aria-hidden="true"></i></a>
+                </div> -->
+            </div>
+            <div class="col-md-4 pt-5" id="heading">
+                <img class="img-fluid d-block mb-3 mx-auto rounded-circle" alt="Card image cap" width="200" src="images/it/Janhvi Belsare.jpg"
+                data-aos="fade-up">
+                <h4 class="text-info"> <b>Janhvi Belsare</b> </h4>
+                <!-- <div>
+                    <a class="link" href="#" style="font-size:20px;"><i class="fa fa-linkedin-square  p-3 text-dark" aria-hidden="true"></i></a>
+                    <a class="link" href="#" style="font-size:20px;"><i class="fa fa-instagram  p-3 text-dark" aria-hidden="true"></i></a>
+                </div> -->
+            </div>
+            <div class="col-md-4  pt-5" id="heading">
+                <img class="img-fluid d-block mb-3 mx-auto rounded-circle" alt="Card image cap" width="200" src="images/it/rutuja hande.jpg"
+                data-aos="fade-up">
+                <h4 class="text-info"> <b>Rutuja Hande</b> </h4>
+                <!-- <div>
+                    <a class="link" href="#" style="font-size:20px;"><i class="fa fa-linkedin-square  p-3 text-dark" aria-hidden="true"></i></a>
+                    <a class="link" href="#" style="font-size:20px;"><i class="fa fa-instagram  p-3 text-dark" aria-hidden="true"></i></a>
+                </div> -->
+            </div>
+            <div class="col-md-4  pt-5" id="heading">
+                <img class="img-fluid d-block mb-3 mx-auto rounded-circle" alt="Card image cap" width="200" src="images/it/Mohit bandawar.jpg"
+                data-aos="fade-up">
+                <h4 class="text-info"> <b>Mohit bandawar</b> </h4>
+                <!-- <div>
+                    <a class="link" href="#" style="font-size:20px;"><i class="fa fa-linkedin-square  p-3 text-dark" aria-hidden="true"></i></a>
+                    <a class="link" href="#" style="font-size:20px;"><i class="fa fa-instagram  p-3 text-dark" aria-hidden="true"></i></a>
+                </div> -->
+            </div>
+            <div class="col-md-4  pt-5" id="heading">
+                <img class="img-fluid d-block mb-3 mx-auto rounded-circle" alt="Card image cap" width="200" src="images/it/Siddharth supekar.jpg"
+                data-aos="fade-up">
+                <h4 class="text-info"> <b>Siddharth Supekar</b> </h4>
+                <!-- <div>
+                    <a class="link" href="#" style="font-size:20px;"><i class="fa fa-linkedin-square  p-3 text-dark" aria-hidden="true"></i></a>
+                    <a class="link" href="#" style="font-size:20px;"><i class="fa fa-instagram  p-3 text-dark" aria-hidden="true"></i></a>
+                </div> -->
+            </div>
+            <div class="col-md-4  pt-5" id="heading">
+                <img class="img-fluid d-block mb-3 mx-auto rounded-circle" alt="Card image cap" width="200" src="images/it/shruti jiwane.jpg"
+                data-aos="fade-up">
+                <h4 class="text-info"> <b>Shruti Jiwane</b> </h4>
+                <!-- <div>
+                    <a class="link" href="#" style="font-size:20px;"><i class="fa fa-linkedin-square  p-3 text-dark" aria-hidden="true"></i></a>
+                    <a class="link" href="#" style="font-size:20px;"><i class="fa fa-instagram  p-3 text-dark" aria-hidden="true"></i></a>
+                </div> -->
+            </div>
+            <div class="col-md-4  pt-5" id="heading">
+                <img class="img-fluid d-block mb-3 mx-auto rounded-circle" alt="Card image cap" width="200" src="images/it/Devyani Makde.jpg"
+                data-aos="fade-up">
+                <h4 class="text-info"> <b>Devyani Makde</b> </h4>
+                
+                <!-- <div>
+                    <a class="link" href="#" style="font-size:20px;"><i class="fa fa-linkedin-square  p-3 text-dark" aria-hidden="true"></i></a>
+                    <a class="link" href="#" style="font-size:20px;"><i class="fa fa-instagram  p-3 text-dark" aria-hidden="true"></i></a>
+                </div> -->
+            </div>
+          </div>
+    </div>
+</div>
+
+
+<style>
+.team-banner{
+background-image:url('images/mainbgimg1.gif');
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-attachment: fixed;
+       width: 100%;
+       height
+}   
+
+.team-banner-heading{
+    animation: fadeInHeading 1s ease-in-out;
+}
+@keyframes fadeInHeading{
+from{
+opacity :0;
+transform: translateX(300px);
+}
+to{
+opacity: 1;
+ }
+}
+
+/*--------------- Responsive CSS -----------------------*/
+@media only screen and (max-width:991px){
+.team-banner-row1 h2{
+font-size: 25px;
+font-weight: bolder;
+}
+
+#heading h4{
+font-size: 20px;
+font-weight: lighter;
+}
+
+.team-banner-row2 img{
+width: 150px;
+}
+}
+/*--------------------------------------------------------*/
+    
+</style>
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+<!------------------------------------ Footer Section ----------------------------------------------------------------------------------------->
+<div class="footer">
+    <div class="py-5" style="">
+       <div class="container">
+            <div class="row">
+               <div class="col-md-4">
+                   <h4> Address:</h4>
+                   <h6 class="text-info" data-aos="fade-up">ST. Vincent Pallotti College Of Engineering & Technology,Gavsi Manapur, Wardha Road, Nagpur:441108</h6>
+               </div>
+               <div class="col-md-4">
+                  <h4>Quick Links</h4>
+                  <div class="footer-imp-links text-info" data-aos="fade-down">
+                    <!-- <a class="link" href="team.html">Team</a><br> -->
+                    <a class="link" href="visits.html">Visits</a><br>
+                    <a class="link" href="gallery.html">Gallery</a><br>
+                    <a class="link" href="project.html">Projects</a><br>
+                    <a class="link" href="contact-us.html">Contact Us</a>
+                 </div>
+               </div>
+               <div class="col-md-4">
+                   <h4>Location:</h4>
+                   <div class="location-map" data-aos="fade-up">
+                      <iframe style="width:300px;height:auto;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.699716753677!2d79.04554451488298!3d21.004670786011374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bdc6b03bfded%3A0x51964eb66fa3ec5e!2sSt.%20Vincent%20Pallotti%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1666528069153!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                   </div>
+               </div>
+            </div>
+       </div>
+   </div>
+</div>
+<div class="design-team">
+    <div class="container text-center text-white">
+        <h6>Copyright © 2022 All right reserved | Designed by UBA Students Club | SVPCET 
+    </div>
+    <div class="text-center connect-us-icons text-info"> 
+        <a class="link" href=""><i class="fa fa-facebook p-3" aria-hidden="true"></i></a>
+        <a class="link" href=""><i class="fa fa-instagram p-3" aria-hidden="true"></i></a>
+        <a class="link" href=""><i class="fa fa-linkedin  p-3" aria-hidden="true"></i></a>
+        <a class="link" href=""><i class="fa fa-whatsapp  p-3" aria-hidden="true"></i></a>
+        <a class="link" href=""><i class="fa fa-envelope  p-3" aria-hidden="true"></i></a>
+    </div>
+</div>       
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------->
+
+<!---------------------------------- jQuery and Bootsrap CDN --------------------------------------------------------------------->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<!-------------------------------------------------------------------------------------------------------------------------------->
+<!-----------------------------------  AOS JS CDN ------------------------------------------------------------------------------------------->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({
+  offset:150,
+  duration:1200
+});
+</script>
+<!-------------------------------------------------------------------------------------------------------------------------------------------->
+
+</body>
+</html>

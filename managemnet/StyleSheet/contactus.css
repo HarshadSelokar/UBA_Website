@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.contact-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.header {
+    background-color: #f8c94b; /* Yellow background color */
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+h1 {
+    color: #333;
+    margin: 0;
+}
+
+h2 {
+    color: #333;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.info-section {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #1a73e8; /* Blue link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="images/College_Information/College_Logo.png"
+    />
+    <title>
+      UBA | St. Vincent Pallotti College of Engineering and Technology (SVPCET)
+    </title>
+    <link rel="stylesheet" href="StyleSheet/Home_Page.css" />
+  </head>
+  <body>
+    <!--UBA And College Name Plates-->
+    <header class="College_Mission_Info">
+      <div class="College_Logo">
+        <img
+          src="images/College_Information/College_Logo.png"
+          alt="College_Logo"
+        />
+      </div>
+      <div class="College_NamePlate">
+        <h1>Unnat Bharat Abhiyan</h1>
+
+        <p>
+          <b>ST. VINCENT PALLOTTI COLLAGE OF ENGEENIRING AND TECHNOLOGY</b>
+          <br /><span>An Autonomous Institute</span>
+        </p>
+      </div>
+      <div class="UBA_Logo">
+        <img
+          src="images/College_Information/UBA_Logo.png"
+          alt="College_NamePlate"
+        />
+      </div>
+    </header>
+
+    <nav>
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+      <ul id="Open_Mobile">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./visit/visit.html">Visits Gallery</a></li>
+        <li><a href="./managemnet/temp.html">Projects</a></li>
+        <li><a href="deparment\ce.html">Department</a></li>
+
+        <select name="villages" id="villages" onchange="openVillageLink()">
+          <option value="" disabled selected>Adopt Villages</option>
+          <option value="./vilages/GavsiManapur.html">01. Gavsi Manapur</option>
+          <option value="./vilages/Dongargaon.html">02. Dongargaon</option>
+          <option value="./vilages/Khatmari.html">03. Khatmari</option>
+          <option value="./vilages/PanjariLodhi.html">04. Panjari</option>
+          <option value="./vilages/Khasarmari.html">05. Khasarmari</option>
+        </select>
+        <li><a href="./vilages/gallary.html">gallary</a></li>
+
+        <li><a href="./managemnet/contact.html">Contact us</a></li>
+
+
+      </ul>
+    </nav>
+    <section class="Image_Slider" style="margin-top: 10px;">
+      <div class="Home_Images">
+        <img src="images/Group photo/gallery 1.jpeg" alt="">
+        <div id="Navigation_Button">
+          <button id="N_L">	&larr;</button>
+          <button id="N_R">	&rarr;</button>
+        </div>
+        <div class="Navigation_Button_Animation">
+            <span id="HI_one"></span>
+            <span id="HI_two"></span>
+            <span id="HI_three"></span>
+            <span id="HI_four"></span>
+        </div>
+      </div>
+
+      <div class="News_Section">
+         <div id="h4">News/Events</div>
+         <marquee direction="up" onmousedown="this.stop();"
+         onmouseup="this.start();">
+          <div class="News_List"><a href="./managemnet/news1.html">October 9,2023-Awareness session on UBA for first year students of section A,B and F</a></div>
+          <div class="News_List"><a href="./managemnet/news1.html">18th September 2023, Meeting of MOOC coordinators on MOOC and UBA cell functioning</a></div>
+          <div class="News_List"><a href="./managemnet/news1.html"> Workshop on dronefabricationinauguration on 9th October 2023, </a></div>
+          <div class="News_List"><a href="./managemnet/news1.html">Awareness session on UBA for first year students of section I, J and K		11th October, 2023 </a></div>
+          <div class="News_List"><a href="./managemnet/news1.html"> Awareness session on UBA for first year students of section C and H		17th October, 2023 </a></div>
+          <div class="News_List"><a href="./managemnet/news1.html">Guest Lecture by Dr. Vikas Sohoni	November 25, 2022 </a></div>
+          <div class="News_List"><a href="./managemnet/news1.html">Visit to Dongargaon, Panjari Lodhi, Gavasi Manapur		December 30, 2022 </a></div>
+          <div class="News_List"><a href="./managemnet/news1.html">An UBA activity under which a project ,“Solar street Lamp”, won second prize in regional workshop of Unnat Bharat Abhiyan organized by VNIT Nagpur on August 25, 2022 . Also a successful installation of the lamp was done at village Khatmari	August 25, 2022 </a></div>
+          <div class="News_List"><a href="./managemnet/news1.html"> Invitation for Unnati Mahotsav organized by Unnat Bharat Abhiyan, IIT, Delhi- Our UBA project “Solar Street Lamp” done by students and installation at Khatmari village was selected.	March 17-18, 2022</a></div>
+          <div class="News_List"><a href="./managemnet/news1.html"> Participation in RTMNU science congress for innovative society based project exhibition and demonstration on different innovative projects of all departments.	November 25, 2022</a></div>
+          <div class="News_List"><a href="./managemnet/news1.html">Visit to Mahatma Gandhi Institute of Rural Industrialisation(MGIRI).December 30, 2022 </a></div>
+          <div class="News_List"><a href="./managemnet/news1.html">Visits to villages along with students.	November 20, 2021 </a></div>
+          <div class="News_List"><a href="./managemnet/news1.html">Online webinars due to covid lockdown . July to December 2020 </a></div>
+        </marquee>
+    
+      </div>
+    </section>
+
+    <section>
+      <article class="About_Us">
+        <h3>ABOUT UBA</h3>
+        <p>
+          The conceptualization of Unnat Bharat Abhiyan originated from the
+          endeavours of a dedicated group of faculty members at the Indian
+          Institute of Technology (IIT) Delhi, possessing expertise in rural
+          development and appropriate technology. The concept evolved through
+          extensive consultations with representatives from various technical
+          institutions, Rural Technology Action Group (RuTAG) coordinators,
+          voluntary organizations, and government agencies actively engaged in
+          rural development. <br /><br />
+          These deliberations took place during a national workshop hosted at
+          IIT Delhi in September 2014, sponsored by the Council for Advancement
+          of People’s Action and Rural Technology (CAPART), Ministry of Rural
+          Development, Government of India.
+        </p>
+      </article>
+
+      <article class="About_SVPCET-t">
+        <h3>ABOUT SVPCET</h3>
+        <div class="Image_Text">
+         
+          <div id="Image_One"></div>
+
+          <div class="Text">
+            <b>Mission</b>
+            <br />
+            <br />
+            The Mission of Unnat Bharat Abhiyan is to enable higher educational
+            institutions to work with the people of rural India in identifying
+            development challenges and evolving appropriate solutions for
+            accelerating sustainable growth. It also aims to create a virtuous
+            cycle between society and an inclusive academic system by providing
+            knowledge and practices for emerging professions and to upgrade the
+            capabilities of both the public and the private sectors in
+            responding to the development needs of rural India.
+          </div>
+        </div>
+
+        <div class="Image_Text_two">
+
+          <div class="Text_two">
+            <b>Vision</b>
+            <br />
+            <br />
+            Unnat Bharat Abhiyan is inspired by the vision of transformational 
+            change in rural development processes by leveraging knowledge 
+            institutions to help build the architecture of an Inclusive India
+             and to have a paradigm shift in academic and research programs of 
+             the country.
+          </div>
+
+          <div id="Image_Two"></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="Management_Perspectives">
+      <h3>Management <span>Perspective's</span></h3>
+      
+      <div class="MP_Slide">
+       <div class="MP_ONE">
+        <div class="Photo_Details"><img src="" alt="" id="mps_img"><br><div id="mps_desinaton"></div></div>
+        <div class="Photo_Text"><div id="mps_discription"></div><br><br><span id="Text_Photo"><a href="./managemnet/management.html">Read More</a></span></div>
+       </div>
+      </div>
+      <div class="MP_Color">
+        <span id="mps_one"></span>
+        <span id="mps_two"></span>
+        <span id="mps_three"></span> 
+        <span id="mps_four"></span>
+        <span id="mps_five"></span>
+        <span id="mps_six"></span>
+      </div>
+      
+      </section>
+<br>
+    <section class="Vilages_Intigration">
+      <h2>Vilages Intigration</h2><p>Under the aegis of uba, svpcet has recognized five distinguished village clusters : <br> gavsi manapur, panjari lodhi, hatmari, khasarmari, and dongargaon</p>
+    <div class="ImageGroup_VillageName">
+      <div>
+        <div class="Gavsi_Manapur"></div>
+        <div class="Village_Name"><a href=""> Gavsi Manapur</a></div>
+      </div>
+      <div>
+        <div class="Dongargaon"></div>
+        <div class="Village_Name"><a href="">Dongargaon</a></div>
+      </div>
+      <div>
+        <div class="Khatmari"></div>
+        <div class="Village_Name"><a href="">Khatmari</a></div>
+      </div>
+      <div>
+        <div class="Panjari"></div>
+        <div class="Village_Name"><a href="">Panjari</a></div>
+      </div>
+      <div>
+        <div class="Khasarmari"></div>
+        <div class="Village_Name"><a href="">Khasarmari</a></div>
+      </div>
+    </div>
+    </section>
+
+<section class="Illustrious_Faculty">
+  <h3>Introducing Our <span> Illustrious Faculty</span></h3>
+  <div class="ImageGroup_Faculty">
+    <div class="Align_Images">
+      <div class="Ashutosh_Sir"></div>
+      <div class="FacultyName"><b>Faculty Incharge <br>Dr. Ashutosh Werulkar</b>
+        <br><span><b><i>UBA Head</i></b></span></div>
+    </div>
+    <div class="Align_Images">
+      <div class="Sayli_mam"></div>
+      <div class="FacultyName"><b>Faculty Incharge   <br>Prof. Sayali Kanhav</b>
+        <br><span><b><i>Co-cordinator</i></b></span></div>
+    </div>
+    <div class="Align_Images">
+      <div class="pallavi_wankhede_Mam"></div>
+      <div class="FacultyName"><b>Faculty Incharge  <br> Prof. Pallavi Wankhede
+      </b><br><span><b><i>CE Department</i></b></span></div>
+    </div>
+    <div class="Align_Images">
+      <div class="Hema_Mam"></div>
+      <div class="FacultyName"><b>Faculty Incharge   <br>Dr. Hema Kale
+      </b><br><span><b><i>ETC Department</i></b></span></div>
+    </div>
+  </div>
+
+  <div class="ImageGroup_Faculty">
+    <div class="Align_Images">
+      <div class="Pravin_Mam"></div>
+      <div class="FacultyName"><b>Faculty Incharge <br>Dr. Pravin Nerkar</b>
+        <br><span><b><i>Mechanical Department </i></b></span></div>
+    </div>
+    <div class="Align_Images">
+      <div class="Priti_Mam"></div>
+      <div class="FacultyName"><b>Faculty Incharge <br>Prof. Priti Golar</b>
+        <br><span><b><i>IT Department</i></b></span></div>
+    </div>
+    <div class="Align_Images">
+      <div class="Praful_Sir"></div>
+      <div class="FacultyName"><b>Faculty Incharge <br> Dr. Praful Tarwatkar</b><br><span><b><i>EE Department</i></b></span></div>
+    </div>
+    <div class="Align_Images">
+      <div class="Suyog_Sir"></div>
+      <div class="FacultyName"><b>Faculty Incharge <br>Prof. Suyog Dhote</b><br><span><b><i>Civil Engineering Department</i></b></span></div>
+    </div>
+  </div>
+</section>
+
+    <footer>
+      <div class="College_Details">
+        <b>CONTACT US</b><br><br>Address : Student Activity  Center, Unnat Bharat Abhiyan ,<br>
+        STVPCET <br> Phone : (+91) +91 - 9423683433<br>Email : uba@svpcet.edu.in
+      </div>
+      <div class="Links">
+        <b>USEFUL LINK</b>
+        <br>
+        <br>
+          <a href="https://www.stvincentngp.edu.in/">SVPCET</a><br>
+          <a href="./index.html">UBA SVPCET</a><br>
+          <a href="./index.html/Illustrious_Faculty">Faculty</a><br>
+          <a href="./deparment/index.html">Student Team</a><br>
+          <a href="./managemnet/management.html">Management Perspectives</a><br>
+          <a href="./managemnet/contact.html">Contact Us</a>
+      </div>
+      <div class="Links">
+        <b>UBA SOCIAL MEDIA </b><br>
+        <br>
+        <a href="">Twitter</a> <br>
+        <a href="https://www.facebook.com/stvincentngp/">Facebook</a><br>
+        <a href="https://www.instagram.com/svpcetnagpur">Instagram</a><br>
+        <a href="https://twitter.com/techpallottines">Youtube</a>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12122.748894828701!2d79.04498698134455!3d21.00251584390992!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bdc6b03bfded%3A0x51964eb66fa3ec5e!2sSt.%20Vincent%20Pallotti%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1735664081310!5m2!1sen!2sin"></iframe>
+    </footer>
+    <div class="Footer_Copyright"> copyright &copy; 2024 all rights reserved | designed by uba Students club 2024 | svpcet</div>
+
+    <script src="JavaScript/Menu_Nevigation.js"></script>
+    <script src="JavaScript/Image_Slider.js"></script>
+    <script src="JavaScript/Management_Slider.js"></script>
+
+  </body>
+</html>

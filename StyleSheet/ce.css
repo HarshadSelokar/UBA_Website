@@ -1,0 +1,1142 @@
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Handjet:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap");
+/*font-family: "Josefin Sans", sans-serif;*/
+/*font-family: "Alfa Slab One", serif;*/
+
+body {
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    font-size: 1rem;
+    height: 100%;
+    width: 100%;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+
+.College_Mission_Info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .College_Logo img {
+    height: 110px;
+    width: 110px;
+  }
+  
+  .UBA_Logo img {
+    height: 130px;
+    width: 130px;
+  }
+  
+  .College_NamePlate {
+    font-family: "Alfa Slab One", serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  
+  .College_NamePlate h1 {
+    color: #f5c400;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+  
+  .College_NamePlate p {
+    line-height: 16px;
+  }
+  
+  .College_NamePlate b {
+    font-weight: 100;
+    font-size: 16px;
+    color: #394666;
+  }
+  
+  .College_NamePlate span {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+  }
+  
+  
+  nav {
+    width: 100%;
+    background-color: #102a72;
+    height: 4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav ul li {
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  nav ul li a {
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .container1 {
+    cursor: pointer;
+    display: none;
+  }
+  
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+  
+  select {
+    border: none;
+    color: white;
+    font-weight: 700;
+    background-color: #102a72;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  
+  option {
+    background-color: #f5c400;
+    color: black;
+  }
+  
+  select option a {
+    text-decoration: none;
+  }
+
+  
+
+/* DPT-SECTION  */
+
+.d-section {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.option {
+
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+}
+
+
+.box {
+
+    background-color: rgb(183, 182, 182);
+    border-radius: 15px;
+    height: 14rem;
+    width: 14rem;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 0.3s ease;
+
+    img {
+
+        height: 10rem;
+    }
+}
+
+.box:hover {
+
+    /* transform: translateY(10px); */
+    transform: scale(1.1);
+    background-color: #edca6c;
+}
+
+
+
+
+
+
+.com {
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.com h1 {
+
+    text-align: center;
+}
+
+.com-img {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.com-img1 {
+
+    height: 35rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 21px 11px grey;
+
+}
+
+
+.content {
+    margin-top: 6.2rem;
+    margin-bottom: 6rem;
+    text-align: center;
+    margin-right: 13rem;
+    margin-left: 13rem;
+}
+
+.section {
+    display: none;
+    padding: 30px;
+    border: 2px solid #2f2f2f;
+    box-shadow: 0px 0px 26px 8px grey;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.section.active {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}
+.ss-div{
+
+    display: none;
+}
+
+.ss-div.active {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Floating Button Styles */
+.button-menu {
+    cursor: pointer;
+    z-index: 2;
+    background-color: #ffdd00;
+    border: 2px solid #1e1e1e;
+    color: #1e1e1e;
+    font-size: 30px;
+    font-weight: 700;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 3px 10px 0px rgba(16, 16, 16, 0.5);
+    bottom: 30px;
+    right: 30px;
+    position: fixed;
+    transition: transform 0.3s ease;
+}
+
+.checkbox {
+    width: 60px;
+    height: 60px;
+    opacity: 0;
+    z-index: 3;
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.opt {
+    position: fixed;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    color: #000000;
+    z-index: 1;
+    width: 76px;
+    height: 42px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.3s ease, opacity 0.2s;
+    box-shadow: 3px 3px 10px 0px rgba(16, 16, 16, 0.5);
+    right: 30px;
+    bottom: 30px;
+    opacity: 0;
+
+}
+
+.opt:hover {
+
+    background-color: rgb(245, 218, 44);
+}
+
+
+.checkbox:checked~.option-a {
+    transition-delay: 0.1s;
+    transform: translateY(-70px);
+    z-index: 3;
+    opacity: 1;
+}
+
+.checkbox:checked~.option-b {
+    transition-delay: 0.2s;
+    transform: translateY(-140px);
+    z-index: 3;
+    opacity: 1;
+}
+
+.checkbox:checked~.option-c {
+    transition-delay: 0.3s;
+    transform: translateY(-210px);
+    z-index: 3;
+    opacity: 1;
+}
+
+.checkbox:hover~.button-menu,
+.checkbox:checked~.button-menu {
+    background-color: #eccd00;
+    transform: rotate(45deg);
+}
+
+.checkbox:not(:checked)~.button-menu::before {
+    content: "+";
+}
+
+.checkbox:checked~.button-menu::after {
+    content: "-";
+}
+
+/* SECTION PARTS */
+
+
+
+.ce1 {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+
+    .img-div {
+
+
+        display: flex;
+
+
+    }
+
+    .img-div1 {
+        height: 35rem;
+        border-radius: 34px;
+
+    }
+
+}
+
+.info-block {
+    display: inline-flex;
+
+    .info-img {
+
+        display: flex;
+
+        img {
+            display: flex;
+            height: 15rem;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+}
+
+.info {
+
+    text-align: left;
+
+    li {
+        list-style-type: decimal;
+        font-size: larger;
+    }
+
+}
+
+.scroll-div {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+
+
+.student-section {
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+
+.block {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+
+}
+
+.student {
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.img-s {
+
+    height: 13rem;
+    display: flex;
+    border-radius: 50px 0px 50px 0px;
+    box-shadow: 0px 0px 23px 7px grey;
+
+}
+
+
+footer {
+    background-color: #394666;
+    padding: 20px;
+    display: flex;
+    margin-top: 40px;
+  }
+  
+  footer > div {
+    width: 20%;
+    padding: 20px;
+    text-align: left;
+    color: white;
+  }
+  
+  iframe {
+    width: 30%;
+    border-radius: 10px;
+    border: 2px solid white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  
+  .College_Details {
+    padding: 20px;
+    width: 30%;
+    font-size: 16px;
+    color: white;
+  }
+  
+  .Links a {
+    color: white;
+  }
+  
+  .Links,
+  .College_Details b {
+    color: #ffdc5f;
+  }
+  
+  .Footer_Copyright {
+    height: 3.5rem;
+    background-color: #f5c400;
+    color: #001840;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 18px;
+  }
+  
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .College_Mission_Info {
+        display: inline-block;
+      }
+    
+      .College_Logo {
+        display: flex;
+        justify-content: center;
+      }
+    
+      .UBA_Logo {
+        display: flex;
+        justify-content: center;
+      }
+    
+      .College_Mission_Info {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    
+      .College_Logo img {
+        height: 90px;
+        width: 90px;
+      }
+    
+      .UBA_Logo img {
+        height: 100px;
+        width: 100px;
+      }
+    
+      .College_NamePlate h1 {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    
+      .College_NamePlate p {
+        line-height: 12px;
+      }
+    
+      .College_NamePlate b {
+        font-weight: 100;
+        font-size: 12px;
+        color: #394666;
+      }
+    
+      .College_NamePlate span {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 8px;
+      }
+    
+    
+      .container1 {
+        display: block;
+        padding-left: 20px;
+      }
+    
+      nav {
+        justify-content: left;
+      }
+    
+      nav ul {
+        flex-direction: column;
+      }
+    
+      nav ul li {
+        border: 1px solid white;
+        cursor: pointer;
+        padding: 20px;
+      }
+    
+      #Open_Mobile {
+        background-color: #f5c400;
+        width: 50%;
+        position: absolute;
+        margin-top: 410px;
+        margin-left: -40px;
+        z-index: 6;
+        display: none;
+        overflow: hidden;
+    }
+    
+    nav ul li:hover {
+        background-color: #102a71;
+    }
+    
+    select {
+        border: 1.5px solid white;
+        color: white;
+        font-weight: 700;
+        background-color: #f5c400;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-family: "Josefin Sans", sans-serif;
+        padding: 20px 16px;
+    }
+      option {
+        background-color: white;
+        color: black;
+        text-transform: none;
+      }
+
+      
+
+    .option {
+        grid-template-columns: repeat(2, 2fr);
+
+    }
+
+    .box {
+
+        height: 6.5rem;
+        width: 6.5rem;
+
+
+        img {
+            height: 5rem;
+        }
+    }
+
+    .com-img1 {
+
+        height: 17rem;
+    }
+
+    .content {
+
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    .info-img {
+
+        justify-content: center;
+    }
+
+    .ce1 {
+
+        h2 {
+
+            font-size: 1rem;
+        }
+    }
+
+    .info-block {
+
+        display: grid;
+    }
+
+    .student h3{
+
+      text-align: center;
+    }
+
+
+
+    footer {
+        flex-direction: column;
+      }
+    
+      footer > div {
+        width: 80%;
+      }
+      .College_Details {
+        width: 90%;
+        text-align: justify;
+      }
+      iframe {
+        width: 80%;
+      }
+    
+    
+      .Footer_Copyright {
+        font-size: 12px;
+      }
+    
+      .Links a {
+        font-size: 14px;
+      }
+        
+
+    .student-section {
+
+        p {
+
+            font-size: 20px;
+        }
+    }
+
+    .img-s {
+
+        height: 10rem;
+
+    }
+
+    .block {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+
+}
+
+
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .College_NamePlate {
+        align-items: center;
+      }
+    
+      .College_Mission_Info {
+        display: inline;
+    
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    
+      .College_Logo {
+        display: flex;
+        justify-content: center;
+      }
+    
+      .UBA_Logo {
+        display: flex;
+        justify-content: center;
+      }
+    
+      .College_Mission_Info {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    
+      .College_NamePlate {
+        width: 100%;
+      }
+    
+      .College_Logo img {
+        height: 110px;
+        width: 110px;
+      }
+    
+      .UBA_Logo img {
+        height: 126px;
+        width: 126px;
+      }
+    
+      .College_NamePlate h1 {
+        font-size: 22px;
+        line-height: 28px;
+      }
+    
+      .College_NamePlate p {
+        line-height: 16px;
+      }
+    
+      .College_NamePlate b {
+        font-weight: 100;
+        font-size: 14px;
+        color: #394666;
+      }
+    
+      .College_NamePlate span {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 10px;
+      }
+      .container1 {
+        display: block;
+        padding-left: 20px;
+      }
+    
+      nav {
+        justify-content: left;
+      }
+    
+      nav ul {
+        flex-direction: column;
+      }
+    
+      nav ul li {
+        border: 1px solid white;
+        cursor: pointer;
+        padding: 20px;
+      }
+    
+      #Open_Mobile {
+        background-color: #394666;
+        width: 60%;
+        position: absolute;
+        margin-top: 410px;
+        margin-left: -40px;
+        z-index: 6;
+        display: none;
+      }
+    
+      nav ul li:hover {
+        background-color: #2c91d6;
+      }
+    
+      select {
+        color: white;
+        font-weight: 700;
+        background-color: #394666;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-family: "Josefin Sans", sans-serif;
+        padding: 20px 16px;
+      }
+    
+      option {
+        background-color: white;
+        color: black;
+        text-transform: none;
+      }
+
+    .box {
+
+        height: 10rem;
+        width: 10rem;
+
+        img {
+
+            height: 8rem;
+        }
+    }
+
+
+
+    footer {
+        flex-direction: column;
+      }
+    
+      footer > .College_Details,
+      .Links {
+        width: 80%;
+      }
+    
+      iframe {
+        width: 50%;
+      }
+
+}
+
+@media (min-width: 769px) and (max-width: 849px) {
+
+    .Text {
+        padding-top: 16px;
+    }
+
+    .Text_two {
+        padding-top: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+      }
+    
+      iframe {
+        width: 40%;
+      }
+    
+      .College_Details,
+      .Links {
+        width: 80%;
+      }
+}
+
+
+@media (min-width: 769px) and (max-width: 848px) {
+
+    footer {
+      flex-direction: column;
+    }
+    footer > .College_Details,
+    .Links,
+    iframe {
+      width: 80%;
+    }
+  }
+  
+
+
+@media (min-width: 834px) and (max-width: 1024px) {
+
+    footer {
+        flex-direction: column;
+    }
+
+    iframe {
+        width: 40%;
+    }
+
+    .College_Details,
+    .Links {
+        width: 80%;
+    }
+
+
+}
+
+
+@media (min-width: 1800px) and (max-width: 2300px) {
+
+    section,
+    footer {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+
+}
+
+
+
+#sidebar {
+    box-sizing: border-box;
+
+    width: 300px;
+    padding: 5px 1em;
+    background-color: white;
+
+    /* position: sticky; */
+    top: 15rem;
+    align-self: start;
+    transition: 300ms ease-in-out;
+    overflow: hidden;
+    text-wrap: nowrap;
+    position: fixed;
+    z-index: 10;
+
+    border-radius: 0px 8px 8px 0;
+    box-shadow: 0px 0px 30px 5px grey;
+
+}
+
+#sidebar.close {
+    padding: 5px;
+    width: 60px;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar>ul>li:first-child {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+
+    .logo {
+        font-weight: 600;
+    }
+}
+
+#sidebar ul li.active a {
+    color: #5e63ff;
+
+    svg {
+        fill: #5e63ff;
+    }
+}
+
+#sidebar a,
+#sidebar .dropdown-btn,
+#sidebar .logo {
+    border-radius: .5em;
+    padding: .85em;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.dropdown-btn {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+#sidebar svg {
+    flex-shrink: 0;
+    fill: black;
+}
+
+#sidebar a span,
+#sidebar .dropdown-btn span {
+    flex-grow: 1;
+}
+
+#sidebar a:hover,
+#sidebar .dropdown-btn:hover {
+    background-color: rgb(255, 253, 192);
+}
+
+#sidebar .sub-menu {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: 300ms ease-in-out;
+
+    >div {
+        overflow: hidden;
+    }
+}
+
+#sidebar .sub-menu.show {
+    grid-template-rows: 1fr;
+}
+
+.dropdown-btn svg {
+    transition: 200ms ease;
+}
+
+.rotate svg:last-child {
+    rotate: 180deg;
+}
+
+#sidebar .sub-menu a {
+    padding-left: 2em;
+    cursor: pointer;
+}
+
+#toggle-btn {
+    margin-left: auto;
+    padding: 1em;
+    border: none;
+    border-radius: .5em;
+    background: none;
+    cursor: pointer;
+
+    svg {
+        transition: rotate 150ms ease;
+    }
+}
+
+#toggle-btn:hover {
+    background-color: rgb(255, 253, 192);
+}
+
+
+@media(max-width: 800px) {
+
+    #sidebar {
+
+
+        border-right: none;
+        border-radius: 0;
+        padding: 0;
+        position: fixed;
+        top: unset;
+        width: 100%;
+        bottom: 0;
+
+        >ul {
+            padding: 0;
+            display: grid;
+            grid-auto-columns: 60px;
+            grid-auto-flow: column;
+            align-items: center;
+            margin: 0;
+            justify-content: space-around;
+
+
+        }
+
+        ul li {
+            height: 100%;
+        }
+
+        ul a,
+        ul .dropdown-btn {
+            width: 60px;
+            height: 60px;
+            padding: 0;
+            border-radius: 0;
+            justify-content: center;
+        }
+
+        ul li span,
+        ul li:first-child,
+        .dropdown-btn svg:last-child {
+            display: none;
+        }
+
+        ul li .sub-menu.show {
+            position: fixed;
+            bottom: 60px;
+            left: 0;
+            box-sizing: border-box;
+            height: 60px;
+            width: 100%;
+            background-color: rgb(255, 253, 192);
+
+            display: flex;
+            justify-content: center;
+
+            >div {
+                overflow-x: auto;
+            }
+
+            li {
+                display: inline-flex;
+            }
+
+            a {
+                box-sizing: border-box;
+                padding: 1em;
+                width: auto;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+
+#villages{
+
+  cursor: pointer;
+}

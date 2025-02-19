@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Visits</title>
+    <link rel="stylesheet" href="ce.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="images/College_Information/College_Logo.png"
+    />
+  </head>
+  <body>
+    <!--UBA And College Name Plates-->
+    <header class="College_Mission_Info">
+      <div class="College_Logo">
+        <img
+          src="images/College_Information/College_Logo.png"
+          alt="College_Logo"
+        />
+      </div>
+      <div class="College_NamePlate">
+        <h1>Unnat Bharat Abhiyan</h1>
+
+        <p>
+          <b>ST. VINCENT PALLOTTI COLLAGE OF ENGEENIRING AND TECHNOLOGY</b>
+          <br /><span>An Autonomous Institute</span>
+        </p>
+      </div>
+      <div class="UBA_Logo">
+        <img
+          src="images/College_Information/UBA_Logo.png"
+          alt="College_NamePlate"
+        />
+      </div>
+    </header>
+
+    <nav>
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+      <ul id="Open_Mobile">
+        <li><a href="">Home</a></li>
+        <li><a href="">Visits Gallery</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">Department</a></li>
+
+        <select name="villages" id="villages" onchange="openVillageLink()">
+          <option value="" disabled selected>Adopt Villages</option>
+          <option value="Link here">01. Gavsi Manapur</option>
+          <option value="Link here">02. Dongargaon</option>
+          <option value="Link here">03. Khatmari</option>
+          <option value="Link here">04. Panjari</option>
+          <option value="Link here">05. Khasarmari</option>
+        </select>
+
+        <li><a href="">Contact us</a></li>
+      </ul>
+    </nav>
+
+    <!-- DPT-SECTION -->
+    <section class="d-section">
+      <div class="option">
+        <div class="box">
+          <a href="#"><img src="ce-img.png" alt="" /></a>
+        </div>
+        <div class="box">
+          <a href="#"><img src="cvl-img.png" alt="" /></a>
+        </div>
+        <div class="box">
+          <a href="#"><img src="me-img.png" alt="" /></a>
+        </div>
+        <div class="box">
+          <a href="#"><img src="it-img.png" alt="" /></a>
+        </div>
+        <div class="box">
+          <a href="#"><img src="etc-img.png" alt="" /></a>
+        </div>
+        <div class="box">
+          <a href=""><img src="ee-img.png" alt="" /></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="com">
+      <h1>DEPARTMENT OF COMPUTER ENGINEERING</h1>
+
+      <div class="com-img">
+        <img class="com-img1" src="group_photo.jpg" alt="" />
+      </div>
+    </section>
+    <!-- doctor Modules -->
+    <section class="content">
+      <section id="section-a" class="section active">
+        <div class="ce1">
+          <h2 style="text-align: center">
+            Description of Project With this Project (application development)
+            users may access virtual medical consultations from anywhere, at any
+            time. Module details are as follows:
+          </h2>
+          <div class="info-block">
+            <div class="info-img">
+              <img class="info-img1" src="doctor-app.png" alt="" />
+            </div>
+            <div class="info">
+              <ol type="1">
+                <li type="1">
+                  <b>Appointment Booking </b><br />Villagers (Patients) can book
+                  appointments online for any doctors or any diseases at a
+                  Convenient time slots.
+                </li>
+                <li>
+                  <b>Search Doctors </b><br />(Villagers)Patients can search the
+                  doctor by doctor name,availability, specialties, or symptoms.
+                </li>
+                <li>
+                  <b>Notifications </b><br />(Villagers)patient will get
+                  notifications for upcoming appointments, rescheduled
+                  appointments, shared medicine orders, and follow-up
+                  appointments.
+                </li>
+                <li>
+                  <b>Upload Health Documents </b><br />(Villagers) Patients can
+                  upload documents such as medicine orders and other
+                  health-related documents to the app.
+                </li>
+                <li>
+                  <b>In-app Payment </b><br />Villagers (Patients) can pay
+                  doctor's fees in-app payment feature at the time of booking
+                  itself.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Pharmacy Module -->
+      <section id="section-b" class="section">
+        <div class="ce1">
+          <h2 style="text-align: center">
+            The Pharmacy Module streamlines access to medicines in rural areas
+            by connecting patients with local pharmacies. It simplifies ordering
+            and prescription management, ensuring timely delivery of essential
+            medications, addressing the lack of healthcare infrastructure in
+            villages.
+          </h2>
+
+          <div class="info-block">
+            <div class="info-img">
+              <img class="info-img1" src="ph1.png" alt="" />
+            </div>
+            <div class="info">
+              <ol type="1">
+                <li type="1">
+                  <b>Medicine Selection</b><br />Villagers (Patients) can browse
+                  or search for medicines by name or category through the app.
+                </li>
+                <li>
+                  <b>User Registration</b><br />Villagers (Patients) can
+                  register as users, while pharmacies can register in admin mode
+                  for managing orders and stock.
+                </li>
+                <li>
+                  <b>Secure Login</b><br />Villagers (Patients) can log in using
+                  biometric authentication or Google verification for secure
+                  access.
+                </li>
+                <li>
+                  <b>Profile Management</b><br />Villagers (Patients) can manage
+                  personal details, track order history, and update contact
+                  information.
+                </li>
+                <li>
+                  <b>Data Management</b><br />Admins (Pharmacies) can manage
+                  medicine details such as name, price, description, and images,
+                  with data securely stored using Firebase Database.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Patient module -->
+      <section id="section-c" class="section">
+        <div class="ce1">
+          <h2 style="text-align: center">
+            The Patient Module provides villagers with easy access to healthcare
+            services by enabling them to book appointments, consult doctors
+            online, and manage their health records from the app. This module
+            bridges the gap between rural communities and medical professionals,
+            ensuring timely healthcare without the need for physical travel.
+          </h2>
+
+          <div class="info-block">
+            <div class="info-img">
+              <img class="info-img1" src="patient.png" alt="" />
+            </div>
+            <div class="info">
+              <ol type="1">
+                <li type="1">
+                  <b>Appointment Booking</b><br />Villagers (Patients) can
+                  browse or search for medicines by name or category through the
+                  app.Villagers (Patients) can book appointments online with
+                  doctors at convenient time slots.
+                </li>
+                <li>
+                  <b>User Registration</b><br />Villagers (Patients) can
+                  register and create personal profiles to manage their health
+                  records and appointments.
+                </li>
+                <li>
+                  <b>Secure Login</b><br />Villagers (Patients) can log in using
+                  biometric authentication or Google verification for easy and
+                  secure access.
+                </li>
+                <li>
+                  <b>Notifications </b><br />Villagers (Patients) receive
+                  notifications for upcoming appointments, rescheduled
+                  consultations, and follow-up reminders.
+                </li>
+                <li>
+                  <b>Profile Management</b><br />Villagers (Patients) can manage
+                  personal details, view appointment history, and upload
+                  health-related documents.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <div id="scrollDiv" class="scroll-div">
+        <div class="ftr">
+            <input type="checkbox" class="checkbox" id="menu-toggle" />
+            <span class="button-menu"></span>
+      
+            <button class="option-a opt" onclick="showSection('section-a')">Doctor Module</button>
+            <button class="option-b opt" onclick="showSection('section-b')">Pharmacy Module</button>
+            <button class="option-c opt" onclick="showSection('section-c')">Patient Module</button>
+          </div>
+    </div>
+
+
+
+    <!-- student section -->
+  <section class="student-section">
+    <p>2024 Pass Out Team</p>
+    <div class="block">
+      <div class="student">
+        <img class="img-s" src="sample-student.png" alt="student-img">
+          <h3>
+            Mayank Tambe
+          </h3>
+      </div>
+
+      <div class="student">
+        <img class="img-s" src="sample-student.png" alt="student-img">
+          <h3>
+            Mayank Tambe
+          </h3>
+      </div>
+
+      <div class="student">
+        <img class="img-s" src="sample-student.png" alt="student-img">
+          <h3>
+            Mayank Tambe
+          </h3>
+      </div>
+
+      <div class="student">
+        <img class="img-s" src="sample-student.png" alt="student-img">
+          <h3>
+            Mayank Tambe
+          </h3>
+      </div>
+
+      <div class="student">
+        <img class="img-s" src="sample-student.png" alt="student-img">
+          <h3>
+            Mayank Tambe
+          </h3>
+      </div>
+
+      <div class="student">
+        <img class="img-s" src="sample-student.png" alt="student-img">
+          <h3>
+            Mayank Tambe
+          </h3>
+      </div>
+    </div>
+  </section>
+    
+    
+
+    <footer>
+      <div class="College_Details">
+        <b>CONTACT US</b><br /><br />Address : Student Activity Center, Unnat
+        Bharat Abhiyan ,<br />
+        STVPCET <br />
+        Phone : (+91) 7452971049<br />Email : uba@svpcet.edu.in
+      </div>
+      <div class="Links">
+        <b>USEFUL LINK</b>
+        <br />
+        <br />
+        <a href="">SVPCET</a><br />
+        <a href="">UBA IIT Delhi</a><br />
+        <a href="">Faculty</a><br />
+        <a href="">Student Team</a><br />
+        <a href="">Action Plan</a><br />
+        <a href="">Contact Us</a>
+      </div>
+      <div class="Links">
+        <b>UBA SOCIAL MEDIA </b><br />
+        <br />
+        <a href="">Twitter</a> <br />
+        <a href="">Facebook</a><br />
+        <a href="">Instagram</a><br />
+        <a href="">Youtube</a>
+      </div>
+      <iframe></iframe>
+    </footer>
+    <div class="Footer_Copyright">
+      copyright &copy; 2024 all rights reserved | designed by uba Students club
+      2024 | svpcet
+    </div>
+
+    <script src="Menu_Nevigation.js"></script>
+    <script>
+      function showSection(sectionId) {
+        // Hide all sections
+        const sections = document.querySelectorAll(".section");
+        sections.forEach((section) => {
+          section.classList.remove("active");
+        });
+
+        // Show the selected section with animation
+        const selectedSection = document.getElementById(sectionId);
+        if (selectedSection) {
+          selectedSection.classList.add("active");
+        }
+
+        // Close the FAB menu
+        document.getElementById("menu-toggle").checked = false;
+      }
+
+    //   scrolling button
+
+    window.addEventListener('scroll', function() {
+    const scrollDiv = document.getElementById('scrollDiv');
+    if (window.scrollY > 300) {
+        scrollDiv.style.display = 'block';
+    } else {
+        scrollDiv.style.display = 'none';
+    }
+});
+    </script>
+  </body>
+</html>
