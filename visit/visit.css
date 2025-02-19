@@ -23,8 +23,10 @@ body {
 }
 
 .College_Logo img {
-    height: 110px;
-    width: 110px;
+    /* height: 110px;
+    width: 110px; */
+
+    height: 8rem;
 }
 
 .UBA_Logo img {
@@ -398,8 +400,8 @@ iframe {
     }
 
     .College_Logo img {
-        height: 90px;
-        width: 90px;
+        /* height: 90px;
+        width: 90px; */
     }
 
     .UBA_Logo img {
@@ -569,8 +571,8 @@ iframe {
     }
 
     .College_Logo img {
-        height: 110px;
-        width: 110px;
+        /* height: 110px;
+        width: 110px; */
     }
 
     .UBA_Logo img {
