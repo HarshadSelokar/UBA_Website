@@ -3,9 +3,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fffdf0;
-<<<<<<< HEAD
-}
-=======
     
 }
 .projects-background {
@@ -76,7 +73,6 @@ body {
     }
 }
 
->>>>>>> 71b178f61c910970f47c0523a6b6bb87316ec9d7
 
 .projects-container {
     max-width: 1200px;
@@ -98,13 +94,10 @@ h1 {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 0 12px 3px grey;
-<<<<<<< HEAD
-=======
 
     margin-left: 3rem;
     margin-right: 3rem;
 
->>>>>>> 71b178f61c910970f47c0523a6b6bb87316ec9d7
 }
 
 .project-image {
@@ -188,11 +181,8 @@ h1 {
 @media (max-width: 768px) {
     .project-card {
         flex-direction: column;
-<<<<<<< HEAD
-=======
         margin-left: 1.5rem;
         margin-right: 1.5rem;
->>>>>>> 71b178f61c910970f47c0523a6b6bb87316ec9d7
     }
     .photo-container {
         padding: 0.75rem;
@@ -208,11 +198,8 @@ h1 {
 @media screen and (max-width: 768px) {
     .project {
         flex-direction: column;
-<<<<<<< HEAD
-=======
         
     
->>>>>>> 71b178f61c910970f47c0523a6b6bb87316ec9d7
     }
   
     .photo-container {
