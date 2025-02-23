@@ -286,6 +286,8 @@ iframe {
 
 .Links a {
   color: white;
+  margin-bottom: 10px;
+  text-decoration: none;
 }
 
 .Links,
