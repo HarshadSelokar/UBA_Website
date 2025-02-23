@@ -215,17 +215,21 @@ body {
 }
 
 .com h1 {
+<<<<<<< HEAD
   font-size:37px;
   font-family:  "Alfa Slab One", serif;
   font-weight: 400;
   font-style: normal;
   position: relative;
   top: 35px;
+=======
+>>>>>>> 71b178f61c910970f47c0523a6b6bb87316ec9d7
 
     text-align: center;
 }
 
 .com-img {
+<<<<<<< HEAD
   margin-bottom: 2em;
 
   display: flex;
@@ -239,6 +243,19 @@ body {
       height: 35rem;
       border-radius: 15px;
       box-shadow: 0px 0px 20px 8px grey;
+=======
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.com-img1 {
+
+    height: 35rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 21px 11px grey;
+>>>>>>> 71b178f61c910970f47c0523a6b6bb87316ec9d7
 
 }
 

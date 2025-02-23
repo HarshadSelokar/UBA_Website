@@ -3,7 +3,80 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fffdf0;
+<<<<<<< HEAD
 }
+=======
+    
+}
+.projects-background {
+    position: relative;
+    width: 100%;
+    height: 17rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    margin-bottom: 2rem;
+    box-shadow: 0px 12px 15px 5px grey;
+
+    /* Background animation */
+    background-size: cover;
+    background-position: center;
+    animation: slideBackground 20s infinite;
+}
+
+/* Glass Effect Overlay */
+.projects-background .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.586);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    z-index: 1;
+    
+}
+
+.projects-background h1 {
+    position: relative;
+    z-index: 2;
+    color: #a29d9d;
+    text-shadow: -1px 0px 20px black;
+    font-size: 3.7rem;
+}
+
+/* Background Animation */
+@keyframes slideBackground {
+    0%, 20% {
+        background-image: url('/UBA_Website/managemnet/img/pin1pro.jpg');
+    }
+    21%, 40% {
+        background-image: url('/UBA_Website/managemnet/img/pin2pro.jpg');
+    }
+    41%, 60% {
+        background-image: url('/UBA_Website/managemnet/img/pin3pro.jpg');
+    }
+    61%, 80% {
+        background-image: url('/UBA_Website/managemnet/img/pin4pro.jpg');
+    }
+    81%, 100% {
+        background-image: url('/UBA_Website/managemnet/img/pin5pro.jpg');
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-background {
+        height: 300px;
+        font-size: 1.5rem;
+    }
+}
+
+>>>>>>> 71b178f61c910970f47c0523a6b6bb87316ec9d7
 
 .projects-container {
     max-width: 1200px;
@@ -25,6 +98,13 @@ h1 {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 0 12px 3px grey;
+<<<<<<< HEAD
+=======
+
+    margin-left: 3rem;
+    margin-right: 3rem;
+
+>>>>>>> 71b178f61c910970f47c0523a6b6bb87316ec9d7
 }
 
 .project-image {
@@ -108,6 +188,11 @@ h1 {
 @media (max-width: 768px) {
     .project-card {
         flex-direction: column;
+<<<<<<< HEAD
+=======
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+>>>>>>> 71b178f61c910970f47c0523a6b6bb87316ec9d7
     }
     .photo-container {
         padding: 0.75rem;
@@ -123,6 +208,11 @@ h1 {
 @media screen and (max-width: 768px) {
     .project {
         flex-direction: column;
+<<<<<<< HEAD
+=======
+        
+    
+>>>>>>> 71b178f61c910970f47c0523a6b6bb87316ec9d7
     }
   
     .photo-container {
