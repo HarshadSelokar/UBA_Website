@@ -1,0 +1,579 @@
+<!doctype html>
+<html>
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="responsive-style.css">
+
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</head>
+
+<body onload="myfunload()">
+
+   <div id="preloader"></div>
+
+   <script type="text/javascript">
+      var preload = document.getElementById('preloader');
+      function myfunload() {
+         preload.style.display = 'none';
+      };
+
+   </script>
+
+
+
+   <div id="progress">
+      <span id="progress-value">&#x1F815</span>
+      <script>
+         let calcScrollValue = () => {
+            let scrollProgress = document.getElementById("progress");
+            let progressValue = document.getElementById("progress-value");
+            let pos = document.documentElement.scrollTop;
+            let calcHeight =
+               document.documentElement.scrollHeight -
+               document.documentElement.clientHeight;
+            let scrollValue = Math.round((pos * 100) / calcHeight);
+            if (pos > 100) {
+               scrollProgress.style.display = "grid";
+            } else {
+               scrollProgress.style.display = "none";
+            }
+            scrollProgress.addEventListener("click", () => {
+               document.documentElement.scrollTop = 0;
+            });
+            scrollProgress.style.background = `conic-gradient(#d3d3d3 ${scrollValue}%, #17a2b8 ${scrollValue}%)`;
+         };
+         window.onscroll = calcScrollValue;
+// window.onload = calcScrollValue;
+
+      </script>
+   </div>
+
+
+
+   <div class="container-fluid">
+       <div class="row text-center">
+         <div class="col-md-2">
+            <img class="clglogo" src="images/logo.jpg">
+            <style>
+               .clglogo{
+                  width: 120px;
+                  height:auto;
+               }
+            </style>
+         </div>
+         <div class="col-md-8">
+             <h2>ST. VINCENT PALLOTTI COLLEGE OF ENGINEERING & TECHNOLOGY</h3>
+             <h3>UNNAT BHARAT ABHIYAN</h3>
+         </div>
+         <div class="col-md-2">
+             <img class="u-logo" src="images/ulogo.jpg">
+             <style>
+               .u-logo{
+                  width: 110px;
+                  height:auto;
+               }
+             </style>
+         </div>
+       </div>
+   </div>
+
+   <nav class="navbar navbar-expand-lg c-nav">
+      <div class="container nav-c">
+         <style>
+            .nav-c{
+               width:50%;
+               margin:auto;
+            }
+            .c-nav{
+               background-color:lightblue;
+               padding: 1%;
+            }
+         </style>
+         
+        
+         <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+            class="navbar-toggler"><span style="color:black"><i class="fa fa-bars"></i></span></button>
+
+         <div id="navbarSupportedContent" class="collapse navbar-collapse div_ul">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a href="index.html" class="nav-link  ">Home</a></li>
+        <!-- <li class="nav-item"><a href="team.html" class="nav-link text-dark">Team </a></li> -->
+        <li class="nav-item"><a href="visits.html" class="nav-link text-dark">Visits</a></li>
+        <li class="nav-item active"><a href="gallery.html" class="nav-link text-dark">Gallery</a></li>
+        <li class= "nav-item"><a href="project.html" class="nav-link text-dark">Projects</a></li>
+        <div class="dropdown">
+            <li class="dropdown-toggle mt-2" type="" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor:pointer;">
+              Departments
+            </li>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="ce.html">Computer Engineering</a>
+              <a class="dropdown-item" href="etc.html">Electronic & Telecommunication Engineering</a>
+              <a class="dropdown-item" href="it.html">Information Technology</a>
+              <a class="dropdown-item" href="ee.html">Electrical Engineering</a>
+              <a class="dropdown-item" href="civil.html">Civil Engineering</a>
+              <a class="dropdown-item" href="me.html">Mechenical Engineering</a>
+            </div>
+          </div>
+        <li class="nav-item"><a href="contact-us.html" class="nav-link text-dark">Contact-Us</a></li>
+      </ul>
+    </div>
+      </div>
+   </nav>
+   <div class="bg-info">
+<div class="container text-center slider-c">
+   <style>
+      .slider-c{
+         width:100%;
+         margin:auto;
+      }
+   </style>
+   <div id="demo" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+      
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/clg img.jpg"  width="1100" height="500">
+        </div>
+        <div class="carousel-item">
+          <img src="images/11.jpeg" width="1100" height="500">
+        </div>
+        <div class="carousel-item">
+          <img src="images/13.jpeg"  width="1100" height="500">
+        </div>
+      </div>
+      
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+   </div>
+</div>
+
+   <!-- <div class="banner">
+      <div class="container text-center">
+         <p class="text-center text-info">Unnat Bharat Abhiyaan</p>
+         <h2 class="text-center text-info">St. Vincent Pallotti College of Engineering & Technology.</h2>
+         <img src="images/clglogo.png"  class="clg-logo">
+
+         <h3 style="font-style:oblique;" class="pt-2 text-white"> Student Community</h3>
+      </div>
+   </div> -->
+   <style>
+     /* .clg-logo{
+      animation:mover 1s infinite alternate;
+     }
+     @keyframes mover{
+      0%{
+         transform: translateY(0);
+      }
+      100%{
+         transform: translateY(-15px);
+      }
+     } */
+   </style>
+
+
+
+   <!-- Slider -->
+
+
+
+
+   <div class="about-acm">
+      <div class="container">
+         <h2 class="text-center text-info">ABOUT UBA</h2>
+         <div class="row gy-4">
+            <div class="col-lg-6 col-md-12" style="margin-top:70px">
+               <div id="slides" class="carousel slide" data-ride="carousel" data-interval="0">
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <img src="images/wardha.jpg" class="mx-auto d-block" width=100% >
+                        <div class="carousel-caption">
+                           <!-- <h1 class="display-4">Unnat Bharat Abhiyan.</h1> -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+               <p class="justify-content-around text-justify" data-aos="fade-in">Unnat Bharat Abhiyan is inspired by the vision
+                   of transformational change in rural development processes by leveraging knowledge institutions 
+                   to help build the architecture of an Inclusive India. Its mission is conceptualized as a movement
+                   to enable processes that connect institutes of higher education with local communities to address
+                  the developmental challenges of rural India through participatory processes and appropriate
+                  technologies for accelerating sustainable growth. It also aims to create a virtuous cycle between
+                  the society and an inclusive university system by providing knowledge and practices for emerging
+                  professions and to upgrade the capabilities of both the public and the private
+                  sectors.</p>
+            </div>
+         </div>
+
+      </div>
+   </div>
+
+
+
+   <div class="svpcet-acm">
+      <h2 class="text-center text-info">ABOUT SVPCET UBA </h2>
+      <div class="container-fluid svpcet-acm-next-container" style="width:80%">
+         <div class="row svpcet-acm-row">
+            <div class="col-lg-5 svpcet-acm-row-d1">
+               <h4>Mission</h4>
+               <p data-aos="fade-right">The Mission of Unnat Bharat Abhiyan is to enable higher educational institutions to work with the people of rural India in identifying development challenges and evolving appropriate solutions for accelerating sustainable growth. It also aims to create a virtuous cycle between society and an inclusive academic system by providing knowledge and practices for emerging professions and to upgrade the capabilities of both the public and the private sectors in responding to the development needs of rural India.</p>
+            </div>
+            
+            <div style="margin-left: 40px;" class="col-lg-5 svpcet-acm-row-d3">
+               <h4>Vision</h4>
+               <p data-aos="fade-right">The Mission of Unnat Bharat Abhiyan is to enable higher educational institutions to work with the people of rural India in identifying development challenges and evolving appropriate solutions for accelerating sustainable growth. It also aims to create a virtuous cycle between society and an inclusive academic system by providing knowledge and practices for emerging professions and to upgrade the capabilities of both the public and the private sectors in responding to the development needs of rural India.</p>
+            </div>
+            <!-- <div class="col-lg-5 svpcet-acm-row-d2">
+               <h4 class="text-white"> Vision </h4>
+               <p class="text-white" data-aos="fade-up">Unnat Bharat Abhiyan is inspired by the vision of transformational change in rural development processes by leveraging knowledge institutions to help build the architecture of an Inclusive India.</p>
+            </div> -->
+            <!-- <div class="col-lg-4 svpcet-acm-row-d3">
+               <h4>OverAll Development</h4>
+               <p data-aos="fade-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt itaque incidunt
+                  cumque id deserunt natus molestias sed corporis, praesentium, ullam ipsum ut quidem magni error eaque,
+                  illum excepturi quos consequatur..</p>
+            </div> -->
+         </div>
+      </div>
+   </div>
+
+   <div class="special-groups">
+      <div class="container-fluid special-groups-container" style="width:80%;height:auto;">
+         <h2 class="text-info text-center mb-5">Villages Adopted</h2>
+         <h5 style="font-weight:normal;" class="mb-5" data-aos="fade-up">Under the aegis of UBA, SVPCET has identified 5
+            village clusters namely Gavsi Manapur, Panjari Lodhi, Khatmari, Khasarmari and Dongargaon.</h5>
+         <div class="row justify-content-center" id="special-group-row">
+            <div class="col-lg-4  special-group-row-div2">
+               <div class="card" id="special-group-row-card2">
+                  <img class="card-img-top" src="images/manapur village.jpg" style="padding: 10px;width:350px;height:185px ;" data-aos="fade-in">
+                  <div class="card-body" data-aos="fade-down">
+                     <h5 class="card-title pt-4"> Gavsi Manapur</h5>
+                     <!-- <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt itaque incidunt cumque id deserunt natus molestias sed corporis, praesentium, ullam ipsum ut quidem magni error eaque, illum excepturi quos consequatur..</p> -->
+                     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4  special-group-row-div2">
+               <div class="card" id="special-group-row-card2">
+                  <img class="card-img-top" src="images/village 2.jpeg" style="padding: 10px;width:350px;height:185px ;" data-aos="fade-in">
+                  <div class="card-body" data-aos="fade-down">
+                     <h5 class="card-title pt-4"> Panjari Lodhi</h5>
+                     <!-- <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt itaque incidunt cumque id deserunt natus molestias sed corporis, praesentium, ullam ipsum ut quidem magni error eaque, illum excepturi quos consequatur..</p> -->
+                     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+               </div>
+            </div>
+
+
+            <div class="col-lg-4  special-group-row-div2">
+               <div class="card" id="special-group-row-card2">
+                  <img class="card-img-top" src="images/village 3.jpg" style="padding: 10px;width:350px;height:185px ;" data-aos="fade-in">
+                  <div class="card-body" data-aos="fade-down">
+                     <h5 class="card-title pt-4"> Khatmari</h5>
+                     <!-- <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt itaque incidunt cumque id deserunt natus molestias sed corporis, praesentium, ullam ipsum ut quidem magni error eaque, illum excepturi quos consequatur..</p> -->
+                     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-lg-4  special-group-row-div2">
+               <div class="card" id="special-group-row-card2">
+                  <img class="card-img-top" src="images/village 4.jpg" style="padding: 10px;width:350px;height:185px ;" data-aos="fade-in">
+                  <div class="card-body" data-aos="fade-down">
+                     <h5 class="card-title pt-4"> Dongargaon</h5>
+                     <!-- <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt itaque incidunt cumque id deserunt natus molestias sed corporis, praesentium, ullam ipsum ut quidem magni error eaque, illum excepturi quos consequatur..</p> -->
+                     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4  special-group-row-div2">
+               <div class="card" id="special-group-row-card2">
+                  <img class="card-img-top" src="images/village 5.jpg" style="padding: 10px;width:350px;height:185px ;" data-aos="fade-in">
+                  <div class="card-body" data-aos="fade-down">
+                     <h5 class="card-title pt-4">Khasarmari</h5>
+                     <!-- <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt itaque incidunt cumque id deserunt natus molestias sed corporis, praesentium, ullam ipsum ut quidem magni error eaque, illum excepturi quos consequatur..</p> -->
+                     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                  </div>
+               </div>
+            </div>
+            
+         </div>
+      </div>
+   </div>
+
+
+
+
+   <!---------------------------------------------------- Our Mission,Vision ------------------------------------------------------------------->
+   <div class="gallery-main ">
+      <h1 class="text-info text-center" style="padding-bottom:100px;padding-top:10px;">Our Initiatives </h1>
+      <div class="container-fluid" style="width:80%;margin:auto">
+         <div class="row">
+            <div class="col-lg-4 mission">
+               <h3 class="text-dark">Solar Street Lamp Installation at Khatmari</h3>
+               <p class="text-dark pt-3" data-aos="fade-up" style="padding-bottom:80px;">
+                  On 27th May 2022  visit to the village Khatmari along with Dr.Ashustosh Werulkar,Institute UBA Coordinator & Dr.Hema Kale, Department UBA coordinator, Retired Police Patil of the village, and Secretary of the village Panjri was done.
+                  </p>
+            </div>
+            <div>
+               <img src="./images/VNIT.jpeg" style="width: 400px; height: 400px; margin: 20%; margin-left: 300px; " class="justify-content-center" >
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!------------------------------------------------------------------------------------------------------------------------------------------------>
+
+
+
+
+
+   <!-------------------------------- Our Team Section ------------------------------------------------------------------------------------------->
+   <style>
+
+   </style>
+
+   <div class="our-team" style="background:whitesmoke;">
+      <div class="py-5 text-center our-team-container">
+         <h2 class="text-info pt-5 pb-5"> Meat Our Team</h2>
+
+         <div class="container our-team-container1">
+            <h4 class="text-info"> Faculty Instructors</h4>
+            <div class="row our-team-row1">
+               <div class="col-md-6">
+                  <div class="card1" data-aos="fade-down">
+                     <div class="imgBox">
+                        <img src="images/faculty/Dr. Ashutosh S. Werulkar  UBA Clg level cordinator.jpg">
+                     </div>
+                     <div class="details">
+                        <div class="content">
+                           <h5> Dr. Ashutosh Werulkar<br><span></span></h5>
+                        </div>
+                     </div>
+                  </div>
+                  <h5> Faculty Incharge </h5>
+                  <h6>UBA Head</h6>
+               </div>
+               <div class="col-md-6">
+                  <div class="card1" data-aos="fade-down">
+                     <div class="imgBox">
+                        <img src="images/">
+                     </div>
+                     <div class="details">
+                        <div class="content">
+                           <h5>sayali mam<br><span></span></h5>
+                        </div>
+                     </div>
+                  </div>
+                  <h5>Faculty Incharge</h5>
+                  <h6>co-cordinator</h6>
+               </div>
+               <div class="col-md-6">
+                  <div class="card1" data-aos="fade-down">
+                     <div class="imgBox">
+                        <img src="images/faculty/pallavi_wankhede  CE.jpg">
+                     </div>
+                     <div class="details">
+                        <div class="content">
+                           <h5>Prof. Pallavi Wankhede<br><span></span></h5>
+                        </div>
+                     </div>
+                  </div>
+                  <h5>Faculty Incharge</h5>
+                  <h6>Computer Engineering Department</h6>
+               </div>
+
+               <div class="col-md-6">
+                  <div class="card1" data-aos="fade-down">
+                     <div class="imgBox">
+                        <img src="images/faculty/Dr. Hema  R. Kale  ETC dept.jpg">
+                     </div>
+                     <div class="details">
+                        <div class="content">
+                           <h5>Dr. Hema Kale<br><span></span></h5>
+                        </div>
+                     </div>
+                  </div>
+                  <h5>Faculty Incharge</h5>
+                  <h6>Electronics and Telecommunication Department</h6>
+               </div>
+
+
+
+               <div class="col-md-6">
+                  <div class="card1" data-aos="fade-down">
+                     <div class="imgBox">
+                        <img src="images/faculty/Dr. Pravin S. Nerkar ME dept.jpg">
+                     </div>
+                     <div class="details">
+                        <div class="content">
+                           <h5>Dr. Pravin Nerkar<br><span></span></h5>
+                        </div>
+                     </div>
+                  </div>
+                  <h5>Faculty Incharge</h5>
+                  <h6>Mechanical Engineering Department</h6>
+               </div>
+
+
+
+               <div class="col-md-6">
+                  <div class="card1" data-aos="fade-down">
+                     <div class="imgBox">
+                        <img src="images/faculty/Prof Priti C. Golar IT dept.jpg">
+                     </div>
+                     <div class="details">
+                        <div class="content">
+                           <h5>Prof. Priti Golar<br><span></span></h5>
+                        </div>
+                     </div>
+                  </div>
+                  <h5>Faculty Incharge</h5>
+                  <h6>Information Technology Department</h6>
+               </div>
+
+               <div class="col-md-6">
+                  <div class="card1" data-aos="fade-down">
+                     <div class="imgBox">
+                        <img src="images/faculty/Trivelli naydu.jpg">
+                     </div>
+                     <div class="details">
+                        <div class="content">
+                           <h5>Prof. Trivelli Naydu<br><span></span></h5>
+                        </div>
+                     </div>
+                  </div>
+                  <h5>Faculty Incharge</h5>
+                  <h6>Electrical Engineering Department</h6>
+                  
+               </div>
+
+               <div class="col-md-6">
+                  <div class="card1" data-aos="fade-down">
+                     <div class="imgBox">
+                        <img src="images/faculty/Prof Suyog  U. Dhote  Civil dept.jpg">
+                     </div>
+                     <div class="details">
+                        <div class="content">
+                           <h5>Prof Suyog Dhote<br><span></span></h5>
+                        </div>
+                     </div>
+                  </div>
+                  <h5>Faculty Incharge</h5>
+                  <h6>Civil Engineering Department</h6>
+               </div>
+            </div>
+         </div>
+
+         <!-- <div class="container-fluid our-team-container2">
+          <h4 class="text-info"> Core Team </h4>
+          <div class="row our-team-row2">
+            <div class="col-md-3">
+                <img class="img-fluid d-block mb-3 mx-auto rounded-circle" style="border:6px solid #17a2b8" alt="Card image cap" width="180" src="https://i.imgur.com/Ur43esv.jpg" data-aos="fade-up">
+                <h5> <b>XYZ</b> </h5>
+                <p class="mb-0">Designation</p>
+                <div>
+                    <a class="link" href="#" style="font-size:20px;"><i class="fa fa-linkedin-square  p-3 text-dark" aria-hidden="true"></i></a>
+                     <a class="link" href="#" style="font-size:20px;"><i class="fa fa-instagram  p-3 text-dark" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            
+        </div> -->
+      </div>
+   </div>
+   </div>
+
+   <script>
+   </script>
+
+
+
+
+   <!------------------------------------ Footer Section ----------------------------------------------------------------------------------------->
+   <div class="footer">
+      <div class="footer-main-div" style="">
+         <div class="container-fluid footer-sub-div" style="width:80%;">
+            <div class="row">
+               <div class="col-md-4">
+                  <h4> Address:</h4>
+                  <h6 class="text-info" data-aos="fade-up">ST. Vincent Pallotti College Of Engineering &
+                     Technology,Gavsi Manapur, Wardha Road, Nagpur:441108</h6>
+                  <!-- <button type="button" class="write-us-btn"> </button> -->
+               </div>
+               <div class="col-md-4 quick-links">
+                  <h4>Quick Links</h4>
+                  <div class="footer-imp-links text-info" data-aos="fade-down">
+                     <!-- <a class="link" href="team.html">Team</a><br> -->
+                     <a class="link" href="visits.html">Visits</a><br>
+                     <a class="link" href="gallery.html">Gallery</a><br>
+                     <a class="link" href="project.html">Projects</a><br>
+                     <a class="link" href="contact-us.html">Contact Us</a>
+                  </div>
+               </div>
+               <div class="col-md-4 location">
+                  <h4>Location:</h4>
+                  <div class="location-map" data-aos="fade-up">
+                     <iframe style="width:250px;height:auto;"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.699716753677!2d79.04554451488298!3d21.004670786011374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bdc6b03bfded%3A0x51964eb66fa3ec5e!2sSt.%20Vincent%20Pallotti%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1666528069153!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="design-team">
+      <div class="container text-center text-white">
+         <h6>Copyright © 2022 All right reserved | Designed by UBA Students Club | SVPCET
+      </div>
+      <div class="text-center connect-us-icons text-info">
+         <a class="link" href=""><i class="fa fa-facebook p-3" aria-hidden="true"></i></a>
+         <a class="link" href=""><i class="fa fa-instagram p-3" aria-hidden="true"></i></a>
+         <a class="link" href=""><i class="fa fa-linkedin  p-3" aria-hidden="true"></i></a>
+         <a class="link" href=""><i class="fa fa-whatsapp  p-3" aria-hidden="true"></i></a>
+         <a class="link" href=""><i class="fa fa-envelope  p-3" aria-hidden="true"></i></a>
+      </div>
+
+   </div>
+
+   <!-------------------------------------------------------------------------------------------------------------------------------------------->
+
+   <!---------------------------------- jQuery and Bootsrap CDN ------------------------------------------------------------------------------>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+      AOS.init({
+         offset: 150,
+         duration: 1200,
+         once: true
+      });
+   </script>
+</body>
+</html>

@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Electronics and Telecommunication</title>
+  <link rel="stylesheet" href="..\StyleSheet\etc.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/College_Information/College_Logo.png" />
+</head>
+
+<body>
+  <!--UBA And College Name Plates-->
+  <header class="College_Mission_Info">
+    <div class="College_Logo">
+      <img
+        src="../images/college/logo.png"
+        alt="College_Logo"
+      />
+    </div>
+    <div class="College_NamePlate">
+    
+
+      <p>
+        <b>ST. VINCENT PALLOTTI COLLAGE OF ENGEENIRING AND TECHNOLOGY</b>
+        <br /><span>An Autonomous Institute</span>
+      </p>
+      <p class="h1">Unnat Bharat Abhiyan</p>
+    </div>
+    <div class="UBA_Logo">
+      <img
+        src="../images/College_Information/UBA_Logo.png"
+        alt="College_NamePlate"
+      />
+    </div>
+  </header>
+  <nav>
+    <div class="container1" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
+    <ul id="Open_Mobile">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../visit/visit.html">Visits Gallery</a></li>
+      <li><a href="./temp.html">Projects</a></li>
+      <li class="dpt-li"><select name="Departments" id="Departments" onchange="openDeptLink()">
+        <option value="" disabled selected>Departments</option>
+        <option value="..\deparment\ce.html">Computer Engineering</option>
+        <option value="..\deparment\IT.html">Information Technology</option>
+        <option value="..\deparment\etc.html">Electronics and Telecommunication</option>
+        <option value="..\deparment\cvl.html">Civil Engineering</option>
+        <option value="..\deparment\bvoc.html">B.Voc</option>
+        <option value="..\deparment\ee.html">Electrical Engineering</option>
+        <option value="..\deparment\me.html">Mechanical Engineering</option>
+      </select>
+    </li>
+
+      <select name="villages" id="villages" onchange="openVillageLink()">
+        <option value="" disabled selected>Adopt Villages</option>
+        <option value="../vilages/GavsiManapur.html">01. Gavsi Manapur</option>
+        <option value="../vilages/Dongargaon.html">02. Dongargaon</option>
+        <option value="../vilages/Khatmari.html">03. Khatmari</option>
+        <option value="../vilages/PanjariLodhi.html">04. Panjari</option>
+        <option value="../vilages/Khasarmari.html">05. Khasarmari</option>
+      </select>
+
+
+      <li><a href="./contact.html">Contact us</a></li>
+    </ul>
+  </nav>
+
+  
+
+  <!-- DPT-SECTION -->
+  <section class="d-section">
+    <div class="option">
+      <div class="box">
+        <a href="..\deparment\ce.html"><img src="..\images\dpt-pg-assets\ce-img.png" alt="" /></a>
+      </div>
+
+      <div class="box">
+        <a href="..\deparment\IT.html"><img src="..\images\dpt-pg-assets\it-img.png" alt="" /></a>
+      </div>
+
+      <div class="box">
+        <a href="..\deparment\me.html"><img src="..\images\dpt-pg-assets\me-img.png" alt="" /></a>
+      </div>
+
+      <div class="box">
+        <a href="..\deparment\cvl.html"><img src="..\images\dpt-pg-assets\cvl-img.png" alt="" /></a>
+      </div>
+
+      <div class="box">
+        <a href="..\deparment\etc.html"><img src="..\images\dpt-pg-assets\etc-img.png" alt="" /></a>
+      </div>
+      
+      <div class="box">
+        <a href="..\deparment\ee.html"><img src="..\images\dpt-pg-assets\ee-img.png" alt="" /></a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <div id="sidebar" class="close">
+    <ul>
+      <li>
+        <span class="logo">Menu</span>
+        <button onclick=toggleSidebar() id="toggle-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <path
+              d="m313-480 155 156q11 11 11.5 27.5T468-268q-11 11-28 11t-28-11L228-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 27.5-11.5T468-692q11 11 11 28t-11 28L313-480Zm264 0 155 156q11 11 11.5 27.5T732-268q-11 11-28 11t-28-11L492-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 27.5-11.5T732-692q11 11 11 28t-11 28L577-480Z" />
+          </svg>
+        </button>
+      </li>
+
+
+      <li>
+        <button onclick=toggleSubMenu(this) class="dropdown-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <path
+              d="M240-200h120v-200q0-17 11.5-28.5T400-440h160q17 0 28.5 11.5T600-400v200h120v-360L480-740 240-560v360Zm-80 0v-360q0-19 8.5-36t23.5-28l240-180q21-16 48-16t48 16l240 180q15 11 23.5 28t8.5 36v360q0 33-23.5 56.5T720-120H560q-17 0-28.5-11.5T520-160v-200h-80v200q0 17-11.5 28.5T400-120H240q-33 0-56.5-23.5T160-200Zm320-270Z" />
+          </svg>
+          <span>About Project</span>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <path
+              d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z" />
+          </svg>
+        </button>
+        <ul class="sub-menu">
+          <div>
+            <li><a onclick="showProject('section-a')">Smart Solar Street Lamp</a></li>
+            <li><a onclick="showProject('section-b')">Agricultural Drone</a></li>
+            <li><a onclick="showProject('section-c')">E-Bicycle Project</a></li>
+            <li><a onclick="showProject('section-d')">Security Systems</a></li>
+          </div>
+        </ul>
+      </li>
+
+
+      <li>
+        <a href="project-document.html">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <path
+              d="M520-640v-160q0-17 11.5-28.5T560-840h240q17 0 28.5 11.5T840-800v160q0 17-11.5 28.5T800-600H560q-17 0-28.5-11.5T520-640ZM120-480v-320q0-17 11.5-28.5T160-840h240q17 0 28.5 11.5T440-800v320q0 17-11.5 28.5T400-440H160q-17 0-28.5-11.5T120-480Zm400 320v-320q0-17 11.5-28.5T560-520h240q17 0 28.5 11.5T840-480v320q0 17-11.5 28.5T800-120H560q-17 0-28.5-11.5T520-160Zm-400 0v-160q0-17 11.5-28.5T160-360h240q17 0 28.5 11.5T440-320v160q0 17-11.5 28.5T400-120H160q-17 0-28.5-11.5T120-160Zm80-360h160v-240H200v240Zm400 320h160v-240H600v240Zm0-480h160v-80H600v80ZM200-200h160v-80H200v80Zm160-320Zm240-160Zm0 240ZM360-280Z" />
+          </svg>
+          <span>Project Aproved Document</span>
+
+        </a>
+      </li>
+
+      <li>
+        <button onclick=toggleSubMenu(this) class="dropdown-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <path
+              d="m221-313 142-142q12-12 28-11.5t28 12.5q11 12 11 28t-11 28L250-228q-12 12-28 12t-28-12l-86-86q-11-11-11-28t11-28q11-11 28-11t28 11l57 57Zm0-320 142-142q12-12 28-11.5t28 12.5q11 12 11 28t-11 28L250-548q-12 12-28 12t-28-12l-86-86q-11-11-11-28t11-28q11-11 28-11t28 11l57 57Zm339 353q-17 0-28.5-11.5T520-320q0-17 11.5-28.5T560-360h280q17 0 28.5 11.5T880-320q0 17-11.5 28.5T840-280H560Zm0-320q-17 0-28.5-11.5T520-640q0-17 11.5-28.5T560-680h280q17 0 28.5 11.5T880-640q0 17-11.5 28.5T840-600H560Z" />
+          </svg>
+          <span>Team</span>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <path
+              d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z" />
+          </svg>
+        </button>
+        <ul class="sub-menu">
+          <div>
+            <li><a onclick="showSection('b-24')">2024</a></li>
+            <li><a onclick="showSection('b-25')">2025</a></li>
+            <li><a onclick="showSection('b-26')">2026</a></li>
+            <!--<li><a onclick="showSection('b-27')">2027</a></li>-->
+            <!-- <li><a onclick="showSection('b-22')">2027</a></li> -->
+
+          </div>
+        </ul>
+      </li>
+      <li>
+        <a href="#gallery-section">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <path
+              d="M520-640v-160q0-17 11.5-28.5T560-840h240q17 0 28.5 11.5T840-800v160q0 17-11.5 28.5T800-600H560q-17 0-28.5-11.5T520-640ZM120-480v-320q0-17 11.5-28.5T160-840h240q17 0 28.5 11.5T440-800v320q0 17-11.5 28.5T400-440H160q-17 0-28.5-11.5T120-480Zm400 320v-320q0-17 11.5-28.5T560-520h240q17 0 28.5 11.5T840-480v320q0 17-11.5 28.5T800-120H560q-17 0-28.5-11.5T520-160Zm-400 0v-160q0-17 11.5-28.5T160-360h240q17 0 28.5 11.5T440-320v160q0 17-11.5 28.5T400-120H160q-17 0-28.5-11.5T120-160Zm80-360h160v-240H200v240Zm400 320h160v-240H600v240Zm0-480h160v-80H600v80ZM200-200h160v-80H200v80Zm160-320Zm240-160Zm0 240ZM360-280Z" />
+          </svg><span>Photos</span>
+
+
+
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <section class="com">
+    <h1>DEPARTMENT OF ELECTRONICS AND TELECOMMUNICATIONS</h1>
+
+    <div class="com-img">
+      <img class="com-img1" src="..\images\etc\etc.jpeg" alt="" />
+    </div>
+  </section>
+  <!-- Virtual Doctor -->
+  <section class="content"> 
+    <section id="section-a" class="section active">
+      <div class="ce1">
+        <h2 style="text-align: center">
+          This project enhances rural lighting infrastructure by integrating solar energy with intelligent control mechanisms. It aims to provide sustainable, cost-effective lighting solutions for villages, improving safety and socio-economic development. Module details are as follows:
+        </h2>
+        <div class="info-block">
+          <div class="info-img">
+            <img class="info-img1" src="lamp.png" alt="" />
+          </div>
+          <div class="info">
+            <ol type="1">
+              <li type="1">
+                <b>Solar Energy Integration</b><br />Harnesses solar panels to power the street lamps, ensuring eco-friendly and sustainable operation.
+              </li>
+              <li>
+                <b>Automatic Night Light</b><br />The lamp automatically turns on at night, providing consistent illumination without manual intervention.
+              </li>
+              <li>
+                <b>Anti-Theft Alarm</b><br />Equipped with a security alarm system to prevent theft of the lamp components.
+
+              </li>
+              <li>
+                <b>Automatic Cleaning System </b><br />Features a sprinkler and motorized cleaning mechanism that operates every three days, maintaining panel efficiency and increasing energy output by 15-25%.
+              </li>
+              <li>
+                <b>Battery Management</b><br />Includes an automatic battery cutoff system to protect against low voltage, ensuring long battery life and reliability.
+              </li>
+
+              <li>
+                <b>Cost-Efficient Design</b><br />The system is designed for affordability, with components like a solar panel, pump, charge controller, and water tank costing approximately ₹13,000 in total.
+              </li>
+
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Agricultural Drone -->
+    <section id="section-b" class="section">
+      <div class="ce1">
+        <h2 style="text-align: center">
+          A drone-based solution designed for automated urea spraying in farmlands, optimizing farming operations through precision technology.
+        </h2>
+
+        <div class="info-block">
+          <div class="info-img">
+            <img class="info-img1" src="#" alt="project_photo" />
+          </div>
+          <div class="info">
+            <ol type="1">
+              <li type="1">
+                <b>Automated Spraying System</b><br />The drone sprays fertilizers or pesticides evenly across the field, reducing manual labor.
+              </li>
+              <li>
+                <b>GPS-Based Navigation</b><br />Uses GPS mapping to ensure precise coverage of agricultural land.
+              </li>
+              <li>
+                <b>Obstacle Detection System</b><br />Equipped with radar-based obstacle detection to prevent collisions and ensure safe operation.
+              </li>
+              <li>
+                <b>Remote Control Operation</b><br />Farmers can control the drone via a mobile app, reducing the need for direct fieldwork.
+              </li>
+              <li>
+                <b>Battery-Efficient Design</b><br />Rechargeable batteries with a quick charging mechanism allow continuous operation with minimal downtime.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--E-Bicycle Project -->
+    <section id="section-c" class="section">
+      <div class="ce1">
+        <h2 style="text-align: center">
+          A cost-effective electric bicycle designed for rural mobility, offering an eco-friendly and efficient transportation solution.
+        </h2>
+
+        <div class="info-block">
+          <div class="info-img">
+            <img class="info-img1" src="#" alt="" />
+          </div>
+          <div class="info">
+            <ol type="1">
+              <li type="1">
+                <b>Electric-Powered Mobility</b><br />Retrofitted with an electric motor to assist in pedaling, reducing physical effort.
+              </li>
+              <li>
+                <b>Rechargeable Battery System</b><br />Powered by a Lithium-ion battery for long-distance travel on a single charge.
+              </li>
+              <li>
+                <b>Dual Mode Operation</b><br />Can function as both a manual bicycle and an electric-powered vehicle.
+              </li>
+              <li>
+                <b>Affordable and Sustainable</b><br />Conversion of regular bicycles into e-bikes at 40-50% lower cost than a new electric bicycle.
+              </li>
+              <li>
+                <b>User-Friendly Design</b><br />Lightweight and easy to maintain, ensuring long-term usability for rural populations.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Security Systems -->
+    <section id="section-d" class="section">
+      <div class="ce1">
+        <h2 style="text-align: center">
+          A project focused on enhancing rural security using modern surveillance and automation technologies.
+        </h2>
+
+        <div class="info-block">
+          <div class="info-img">
+            <img class="info-img1" src="#" alt="" />
+          </div>
+          <div class="info">
+            <ol type="1">
+              <li type="1">
+                <b>CCTV Installation</b><br />Cameras installed in key village locations to monitor activities and prevent theft or vandalism.
+              </li>
+              <li>
+                <b>Smart Irrigation System</b><br />Automated water control using sensors to optimize agricultural irrigation.
+              </li>
+              <li>
+                <b>Solar-Powered Electronic Weighing Machine</b><br />A weighing system powered by solar energy, reducing electricity dependency.
+              </li>
+              <li>
+                <b>Automatic Bell System for Schools</b><br />A school bell that rings automatically at scheduled intervals, eliminating manual operation.
+              </li>
+              
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>  
+
+  <!-- <div id="scrollDiv" class="scroll-div">
+        <div class="ftr">
+            <input type="checkbox" class="checkbox" id="menu-toggle" />
+            <span class="button-menu"></span>
+      
+            <button class="option-a opt" onclick="showSection('section-a')">Doctor Module</button>
+            <button class="option-b opt" onclick="showSection('section-b')">Pharmacy Module</button>
+            <button class="option-c opt" onclick="showSection('section-c')">Patient Module</button>
+          </div>
+    </div> -->
+
+
+
+  <!-- student section -->
+  <section class="student-section">
+    <!-- 2024 -->
+    <div id="b-24" class="ss-div">
+      <p>2024 Pass Out Team</p>
+    <div class="block">
+      <div class="student">
+        <img class="img-s" src="..\images\etc\Shubhangi Kaikadi  ETC.jpg" alt="student-img">
+        <h3>
+          Shubhangi Kaikadi
+        </h3>
+      </div>
+
+      <div class="student">
+        <img class="img-s" src="..\images\etc\Sakshi Bhoyar - ETC.jpg" alt="student-img">
+        <h3>
+          Barnabas
+        </h3>
+      </div>
+
+      <div class="student">
+        <img class="img-s" src="..\images\etc\Prathamesh Surendra Lakhe ETC.jpg" alt="student-img">
+        <h3>
+          Mayank Tambe
+        </h3>
+      </div>
+
+      <div class="student">
+        <img class="img-s" src="..\images\etc\Prajwal Atkale ETC.jpg" alt="student-img">
+        <h3>
+          Mayank Tambe
+        </h3>
+      </div>
+
+      
+
+    </div>
+    </div>
+
+    <!-- 2025 -->
+    <div id="b-25" class="ss-div">
+      <p>2025 Batch Team</p>
+    <div class="block">
+      <div class="student">
+        <img class="img-s" src="ce/sameer.jpg" alt="student-img">
+        <h3>
+          ABC
+        </h3>
+      </div>
+
+      <div class="student">
+        <img class="img-s" src="ce/parth.jpg" alt="student-img">
+        <h3>
+          ABC
+        </h3>
+      </div>
+
+      <div class="student">
+        <img class="img-s" src="ce/naina makhijani.jpg" alt="student-img">
+        <h3>
+          ABC
+        </h3>
+      </div>
+
+      <div class="student">
+        <img class="img-s" src="ce/rajlin.jpg" alt="student-img">
+        <h3>
+          ABC
+        </h3>
+      </div>
+
+      <div class="student">
+        <img class="img-s" src="ce/pranav.jpg" alt="student-img">
+        <h3>
+          ABC
+        </h3>
+      </div>
+
+      <div class="student">
+        <img class="img-s" src="ce/shatakshi.jpg" alt="student-img">
+        <h3>
+          ABC
+        </h3>
+      </div>
+
+      <div class="student">
+        <img class="img-s" src="ce/shubharti.jpg" alt="student-img">
+        <h3>
+          ABC
+        </h3>
+      </div>
+
+      
+      <div class="student">
+        <img class="img-s" src="ce/shruti.jpg" alt="student-img">
+        <h3>
+          ABC
+        </h3>
+      </div>
+      <div class="student">
+        <img class="img-s" src="ce/yamini.jpg" alt="student-img">
+        <h3>
+          ABC
+        </h3>
+      </div>
+    </div>
+    </div>
+<!-- 2026 -->
+
+<div id="b-26" class="ss-div active">
+  <p>2026 Batch Team</p>
+<div class="block">
+  <div class="student">
+    <img class="img-s" src="..\images\etc\Himanshu_Lambat2.png" alt="student-img">
+    <h3>
+      Himanshu Lambat
+    </h3>
+  </div>
+
+  <div class="student">
+    <img class="img-s" src="..\images\etc\Nishaat_Sheikh.png" alt="student-img">
+    <h3>
+      Nishaat Sheikh
+    </h3>
+  </div>
+
+  <div class="student">
+    <img class="img-s" src="..\images\etc\Kunal_Tekade.jpeg" alt="student-img">
+    <h3>
+      Kunal Tekade
+    </h3>
+  </div>
+
+  <div class="student">
+    <img class="img-s" src="..\images\etc\Bharat_Raut.jpeg" alt="student-img">
+    <h3>
+      Bharat Raut
+    </h3>
+  </div>
+
+  <div class="student">
+    <img class="img-s" src="..\images\etc\Devansh_Chheniya.jpeg" alt="student-img">
+    <h3>
+      Devansh Chheniya
+    </h3>
+  </div>
+
+  <div class="student">
+    <img class="img-s" src="..\images\etc\Amish_Raut.jpeg" alt="student-img">
+    <h3>
+      Amish Raut
+    </h3>
+  </div>
+
+ 
+
+
+</div>
+</div>
+
+
+<div id="b-27" class="ss-div">
+  <p>2027 Batch Team</p>
+<div class="block">
+  <div class="student">
+    <img class="img-s" src="ce/" alt="student-img">
+    <h3>
+      Parth Upadhye
+    </h3>
+  </div>
+
+  <div class="student">
+    <img class="img-s" src="ce/Saurabh wankhede.jpg" alt="student-img">
+    <h3>
+      Saurabh Wankhede
+    </h3>
+  </div>
+
+  <div class="student">
+    <img class="img-s" src="ce/Rajas Tarapure.jpg" alt="student-img">
+    <h3>
+      Rajas Tarapure
+    </h3> 
+  </div>
+
+  <div class="student">
+    <img class="img-s" src="ce/Meet Shivhare_.jpg" alt="student-img">
+    <h3>
+      Meet Shivhare
+    </h3>
+  </div>
+
+  <div class="student">
+    <img class="img-s" src="ce/nakul.jpg" alt="student-img">
+    <h3>
+      Nakul Tarmarkar
+    </h3>
+  </div>
+
+  <div class="student">
+    <img class="img-s" src="ce/Aayush Jibhkate.jpg" alt="student-img">
+    <h3>
+      Ayush Jibhkate
+    </h3>
+  </div>
+
+  <div class="student">
+    <img class="img-s" src="ce/Laksh Ikhar.JPG" alt="student-img">
+    <h3>
+      Laksh Ikhar
+    </h3>
+  </div>
+
+  <div class="student">
+    <img class="img-s" src="ce/PratikshaGhate.jpg" alt="student-img">
+    <h3>
+      Pratiksha Ghate
+    </h3>
+  </div>
+
+  <div class="student">
+    <img class="img-s" src="ce/Samiksha Dhawas.jpg" alt="student-img">
+    <h3>
+      Samiksha Dhawas
+    </h3>
+  </div>
+
+  <div class="student">
+    <img class="img-s" src="ce/IMG-20240520-WA0019.jpg" alt="student-img">
+    <h3>
+      Tejasi Rinait
+    </h3>
+  </div>
+
+  <div class="student">
+    <img class="img-s" src="ce/Laksh Ikhar.JPG" alt="student-img">
+    <h3>
+      Laksh Ikhar
+    </h3>
+  </div>
+  
+</div>
+</div>
+  </section>
+
+  <section class="gallery-section" id="gallery-section">
+    <h2> Gallery</h2>
+    <div class="gallery">
+        <img src="..\images\etc\IIT, Delhi (1).jpeg" alt="Nature">
+        <img src="..\images\etc\gallery_2.jpeg" alt="Mountain">
+        <img src="..\images\etc\Indian Science Congress, RTMNU.jpeg" alt="Forest">
+        <img src="..\images\etc\img.jpeg" alt="Forest">
+
+    </div>
+</section>
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <img id="lightbox-img" src="" alt="Expanded Image">
+</div>
+
+
+  <footer>
+    <div class="College_Details">
+      <b>CONTACT US</b><br><br>Address : Student Activity  Center, Unnat Bharat Abhiyan ,<br>
+      STVPCET <br> Phone : (+91) +91 - 9423683433<br>Email : uba@svpcet.edu.in
+    </div>
+    <div class="Links">
+      <b>USEFUL LINK</b>
+      <br>
+      <br>
+        <a href="https://www.stvincentngp.edu.in/">SVPCET</a><br>
+        <a href="../index.html">UBA SVPCET</a><br>
+        <a href="">Faculty</a><br>
+        <a href="./deparment/index.html">Student Team</a><br>
+        <a href="./managemnet/management.html">Management Perspectives</a><br>
+        <a href="./managemnet/contact.html">Contact Us</a>
+    </div>
+    <div class="Links">
+      <b>UBA SOCIAL MEDIA </b><br>
+      <br>
+      <a href="">Twitter</a> <br>
+      <a href="https://www.facebook.com/stvincentngp/">Facebook</a><br>
+      <a href="https://www.instagram.com/svpcetnagpur">Instagram</a><br>
+      <a href="https://twitter.com/techpallottines">Youtube</a>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12122.748894828701!2d79.04498698134455!3d21.00251584390992!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bdc6b03bfded%3A0x51964eb66fa3ec5e!2sSt.%20Vincent%20Pallotti%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1735664081310!5m2!1sen!2sin"></iframe>
+  </footer>
+    <div class="Footer_Copyright"> copyright &copy; 2024 all rights reserved | designed by uba Students club 2024 | svpcet</div>
+
+
+  <script src="Menu_Nevigation.js"></script>
+  <script>
+    function showSection(DivId) {
+      // Hide all sections
+      const batch = document.querySelectorAll(".ss-div");
+      batch.forEach((div) => {
+        div.classList.remove("active");
+      });
+
+      // Show the selected section with animation
+      const selectedbatch = document.getElementById(DivId);
+      if (selectedbatch) {
+        
+        selectedbatch.classList.add("active");
+
+      }
+
+      // // Close the FAB menu
+      // document.getElementById("menu-toggle").checked = false;
+    }
+
+    function showProject(SectionId) {
+      // Hide all sections
+      const project = document.querySelectorAll(".section");
+      project.forEach((section) => {
+        section.classList.remove("active");
+      });
+
+      // Show the selected section with animation
+      const selectedproject = document.getElementById(SectionId);
+      if (selectedproject) {
+        
+        selectedproject.classList.add("active");
+
+      }
+
+      // // Close the FAB menu
+      // document.getElementById("menu-toggle").checked = false;
+    }
+
+    //   scrolling button
+
+    window.addEventListener('scroll', function () {
+      const scrollDiv = document.getElementById('sidebar');
+      if (window.scrollY > 1000 && window.scrollY < 2300) {
+        scrollDiv.style.display = 'block';
+      } else {
+        scrollDiv.style.display = 'none';
+      }
+    });
+
+    // function toggleDisplay() {
+    //     // Get all elements with the class 'toggle-div'
+    //     const divs = document.querySelectorAll('.m-sider');
+    //     divs.forEach(div => {
+    //       // Check the current display style and toggle between 'none' and 'flex'
+    //       if (div.style.display === 'none' || div.style.display === '') {
+    //         div.style.display = 'flex';
+    //       } else {
+    //         div.style.display = 'none';
+    //       }
+    //     });
+    //   }
+
+    //   // Add click event listener to the SVG icon
+    //   const icon = document.querySelector('.icon');
+    //   icon.addEventListener('click', toggleDisplay);
+
+
+
+    const toggleButton = document.getElementById('toggle-btn')
+    const sidebar = document.getElementById('sidebar')
+
+    function toggleSidebar() {
+      sidebar.classList.toggle('close')
+      toggleButton.classList.toggle('rotate')
+
+      closeAllSubMenus()
+    }
+
+    function toggleSubMenu(button) {
+
+      if (!button.nextElementSibling.classList.contains('show')) {
+        closeAllSubMenus()
+      }
+
+      button.nextElementSibling.classList.toggle('show')
+      button.classList.toggle('rotate')
+
+      if (sidebar.classList.contains('close')) {
+        sidebar.classList.toggle('close')
+        toggleButton.classList.toggle('rotate')
+      }
+    }
+
+    function closeAllSubMenus() {
+      Array.from(sidebar.getElementsByClassName('show')).forEach(ul => {
+        ul.classList.remove('show')
+        ul.previousElementSibling.classList.remove('rotate')
+      })
+    }
+
+
+
+    const galleryImages = document.querySelectorAll('.gallery img');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        galleryImages.forEach(img => {
+            img.addEventListener('click', () => {
+                lightbox.style.display = 'flex';
+                lightboxImg.src = img.src;
+            });
+        });
+
+        function closeLightbox() {
+            lightbox.style.display = 'none';
+        }
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+body {
+    background-color: #f4f4f4;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.897);
+    background-color: #344e7e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    /* Enable word wrapping in table cells */
+    table-layout: auto; /* Important for better responsiveness */
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    /* Handle potential overflow */
+    overflow-wrap: break-word; /* Break long words */
+    word-break: break-word;     /* Break words at any character */
+}
+
+th {
+    background-color: #fcce00;
+    color: #080808;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #0077d8;
+}
+
+.logo {
+    max-width: 200px;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Responsive adjustments - improved for better header handling */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+        /* Force table to shrink to fit the screen */
+        width: 100%;
+    }
+    th, td {
+        padding: 10px 8px; /* Reduced padding for smaller screens */
+        /* Ensure headers wrap properly */
+        white-space: normal; 
+    }
+}
+
+
+#villages{
+
+    cursor: pointer;
+  }

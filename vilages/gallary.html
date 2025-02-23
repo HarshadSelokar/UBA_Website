@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Visits Gallery</title>
+    <link rel="stylesheet" href="StyleSheet/gallary.css">
+    <link rel="stylesheet" href="StyleSheet/navigation.css">
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./images/College_Information/College_Logo.png"
+    />
+</head>
+<body>
+    <header class="College_Mission_Info">
+        <div class="College_Logo">
+          <img
+            src="../images/college/logo.png"
+            alt="College_Logo"
+          />
+        </div>
+        <div class="College_NamePlate">
+          
+          <p>
+            <b>ST. VINCENT PALLOTTI COLLAGE OF ENGEENIRING AND TECHNOLOGY</b>
+            <br /><span>An Autonomous Institute</span>
+          </p>
+          <p class="h1">Unnat Bharat Abhiyan</p>
+    
+        </div>
+        <div class="UBA_Logo">
+          <img
+            src="images/College_Information/UBA_Logo.png"
+            alt="College_NamePlate"
+          />
+        </div>
+      </header>
+      <nav>
+        <div class="container1" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+  
+        <ul id="Open_Mobile">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../visit/visit.html">Visits Gallery</a></li>
+            <li><a href="../managemnet/temp.html">Projects</a></li>
+            <li class="dpt-li"><select name="Departments" id="Departments" onchange="openDeptLink()">
+              <option value="" disabled selected>Departments</option>
+              <option value="..\deparment\ce.html">Computer Engineering</option>
+              <option value="..\deparment\IT.html">Information Technology</option>
+              <option value="..\deparment\etc.html">Electronics and Telecommunication</option>
+              <option value="..\deparment\cvl.html">Civil Engineering</option>
+              <option value="..\deparment\bvoc.html">B.Voc</option>
+              <option value="..\deparment\ee.html">Electrical Engineering</option>
+              <option value="..\deparment\me.html">Mechanical Engineering</option>
+            </select>
+          </li>
+    
+  
+          <select name="villages" id="villages" onchange="openVillageLink()">
+            <option value="" disabled selected>Adopt Villages</option>
+            <option value="../vilages/GavsiManapur.html">01. Gavsi Manapur</option>
+            <option value="../vilages/Dongargaon.html">02. Dongargaon</option>
+            <option value="../vilages/Khatmari.html">03. Khatmari</option>
+            <option value="../vilages/PanjariLodhi.html">04. Panjari</option>
+            <option value="../vilages/Khasarmari.html">05. Khasarmari</option>
+          </select>
+  
+  
+          <li><a href="../managemnet/contact.html">Contact us</a></li>
+  
+  
+        </ul>
+      </nav>
+    <h1>UBA Gallery</h1>
+
+    <div class="gallery" id="gallery">
+        <div class="gallery-item">
+            <div class="content"><img src="./images/Group photo/11.jpeg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="./images/Group photo/12.jpeg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="./images/Group photo/13.jpeg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="./images/Group photo/gallery 1.jpeg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="./images/Group photo/gallery 2.jpeg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="./images/Group photo/gallery 3.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="./images/Group photo/gallery 4.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="./images/Group photo/gallery 6.jpeg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="./images/Group photo/galley 5.jpeg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="./images/Group photo/IIT, Delhi (1).jpeg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="./images/Group photo/Indian Science Congress, RTMNU.jpeg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="./images/Group photo/VNIT.jpeg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="./images/Group photo/wardha.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="./images/ce/group photo.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="./images/civil/civil1.JPG" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="./images/civil/civil11.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="./images/civil/civil12.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="./images/civil/civil13.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="./images/civil/civil2.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="./images/civil/civil3.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="./images/College_Information/Block_A.jpeg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="./images/College_Information/Oditorium.jpeg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="./images/me/me21.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="./images/me/me23.jpg" alt=""></div>
+        </div>
+    </div>
+    <footer>
+        <div class="College_Details">
+          <b>CONTACT US</b><br><br>Address : Student Activity  Center, Unnat Bharat Abhiyan ,<br>
+          STVPCET <br> Phone : (+91) +91 - 9423683433<br>Email : uba@svpcet.edu.in
+        </div>
+        <div class="Links">
+          <b>USEFUL LINK</b>
+          <br>
+          <br>
+          <a href="https://www.stvincentngp.edu.in/">SVPCET</a><br>
+          <a href="../index.html">UBA SVPCET</a><br>
+          <a href="../index.html/Illustrious_Faculty">Faculty</a><br>
+          <a href="../deparment/index.html">Student Team</a><br>
+          <a href="../managemnet/management.html">Management Perspectives</a><br>
+          <a href="../managemnet/contact.html">Contact Us</a>
+        </div>
+        <div class="Links">
+          <b>UBA SOCIAL MEDIA </b><br>
+          <br>
+          <a href="">Twitter</a> <br>
+          <a href="https://www.facebook.com/stvincentngp/">Facebook</a><br>
+          <a href="https://www.instagram.com/svpcetnagpur">Instagram</a><br>
+          <a href="https://twitter.com/techpallottines">Youtube</a>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12122.748894828701!2d79.04498698134455!3d21.00251584390992!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bdc6b03bfded%3A0x51964eb66fa3ec5e!2sSt.%20Vincent%20Pallotti%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1735664081310!5m2!1sen!2sin"></iframe>
+      </footer>
+      <div class="Footer_Copyright"> copyright &copy; 2024 all rights reserved | designed by uba Students club 2024 | svpcet</div>
+    
+      <script src="JavaScript/Menu_Nevigation.js"></script>
+     <script src="./JavaScript/gallary.js"></script>
+</body>
+</html>

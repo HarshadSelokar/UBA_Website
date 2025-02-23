@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./img/logo.jpg"
+    />
+    <title>
+      UBA | St. Vincent Pallotti College of Engineering and Technology (SVPCET)
+    </title>
+    <link rel="stylesheet" href="StyleSheet/navigation.css" />
+    <link rel="stylesheet" href="StyleSheet/managemnt2.css">
+  </head>
+  <body>
+
+    <header class="College_Mission_Info">
+      <div class="College_Logo">
+        <img
+          src="../images/college/logo.png"
+          alt="College_Logo"
+        />
+      </div>
+      <div class="College_NamePlate">
+        
+  
+        <p>
+          <b>ST. VINCENT PALLOTTI COLLAGE OF ENGEENIRING AND TECHNOLOGY</b>
+          <br /><span>An Autonomous Institute</span>
+        </p>
+        <p class="h1">Unnat Bharat Abhiyan</p>
+      </div>
+      <div class="UBA_Logo">
+        <img
+          src="./img/UBA_Logo.png"
+          alt="College_NamePlate"
+        />
+      </div>
+    </header>
+    <nav>
+      <div class="container1" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+      <ul id="Open_Mobile">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../visit/visit.html">Visits Gallery</a></li>
+        <li><a href="./temp.html">Projects</a></li>
+        <li class="dpt-li"><select name="Departments" id="Departments" onchange="openDeptLink()">
+          <option value="" disabled selected>Departments</option>
+          <option value="..\deparment\ce.html">Computer Engineering</option>
+          <option value="..\deparment\IT.html">Information Technology</option>
+          <option value="..\deparment\etc.html">Electronics and Telecommunication</option>
+          <option value="..\deparment\cvl.html">Civil Engineering</option>
+          <option value="..\deparment\bvoc.html">B.Voc</option>
+          <option value="..\deparment\ee.html">Electrical Engineering</option>
+          <option value="..\deparment\me.html">Mechanical Engineering</option>
+        </select>
+      </li>
+
+        <select name="villages" id="villages" onchange="openVillageLink()">
+          <option value="" disabled selected>Adopt Villages</option>
+          <option value="../vilages/GavsiManapur.html">01. Gavsi Manapur</option>
+          <option value="../vilages/Dongargaon.html">02. Dongargaon</option>
+          <option value="../vilages/Khatmari.html">03. Khatmari</option>
+          <option value="../vilages/PanjariLodhi.html">04. Panjari</option>
+          <option value="../vilages/Khasarmari.html">05. Khasarmari</option>
+        </select>
+
+
+        <li><a href="./contact.html">Contact us</a></li>
+      </ul>
+    </nav>
+  <main class="container">
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="./img/2.png" alt="Dr. Paul Chandrankunnel">
+      <h3>Dr. Paul Chandrankunnel</h3>
+      <h4>Director, SVPCET</h4>
+      <p>
+        “At SVPCET, we are proud to be a part of Unnat Bharat Abhiyan, driving sustainable development and empowering our rural partners. Our collective efforts are making a tangible difference in the lives of communities and fostering a deeper connection between education and social responsibility. This initiative not only enriches the lives of those we serve but also contributes significantly to the holistic development of our students.”
+      </p>
+    </div>
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="./img/1.png" alt="Fr. James Thomas">
+      <h3>Fr. James Thomas</h3>
+      <h4>Assistant Director, SVPCET</h4>
+      <p>
+        “Unnat Bharat Abhiyan aligns perfectly with our institution’s vision of creating a positive social impact. By engaging our students and faculty in rural development projects, we not only contribute to the community but also foster a sense of responsibility and empathy among our students. This initiative has bridged the gap between academia and rural realities.”
+      </p>
+    </div>
+    <!-- Card 3 -->
+    <div class="card">
+      <img src="./img/33.png" alt="Fr. Siju Jose">
+      <h3>Fr. Siju Jose</h3>
+      <h4>Financial Administrator, SVPCET</h4>
+      <p>
+        Engaging with rural communities through UBA has led to a rich cultural exchange. Our students and faculty gain a deeper understanding of rural lifestyles, traditions, and challenges. This cultural immersion fosters empathy and broadens their perspectives. For instance, organizing cultural events and festivals in the villages has become a regular activity, strengthening the bond between the institution and the community.
+      </p>
+    </div>
+    <!-- Card 4 -->
+    <div class="card">
+      <img src="./img/44.png" alt="R.B. Gowardhan">
+      <h3>R.B. Gowardhan</h3>
+      <h4>Institute Mentor, SVPCET</h4>
+      <p>
+        “Our institution leverages its resources and expertise to contribute to infrastructure development in rural areas through UBA. For example, our civil engineering department has undertaken projects to build robust road networks and irrigation systems, improving connectivity and agricultural productivity. It’s incredibly rewarding to see the tangible changes we’ve brought about together, making a real difference in people’s lives.”
+      </p>
+    </div>
+    <!-- Card 5 -->
+    <div class="card">
+      <img src="./img/5.png" alt="Dr. Surendra V. Gole">
+      <h3>Dr. Surendra V. Gole</h3>
+      <h4>Former Principal, SVPCET (2018–May 2024)</h4>
+      <p>
+        “Our commitment to Unnat Bharat Abhiyan is unwavering as we strive to bridge the urban-rural divide through innovative solutions and community engagement. Together, we are shaping a brighter future for our rural communities. This program truly embodies the spirit of inclusive growth and development, paving the way for a brighter future for all. The collaborative efforts have not only improved local livelihoods but also instilled a sense of responsibility and empathy in the youth.”
+      </p>
+    </div>
+    <!-- Card 6 -->
+    <div class="card">
+      <img src="./img/6.png" alt="Dr. Vijay Wadhai">
+      <h3>Dr. Vijay Wadhai</h3>
+      <h4>Principal, SVPCET (May 2024, onwards)</h4>
+      <p>
+        “I am incredibly proud of our students who have actively participated in the UBA initiative. Their dedication to applying their academic knowledge to real-world challenges has made a significant impact on the rural communities we serve. Through UBA, our students have not only enhanced their technical and problem-solving skills but also developed a deep sense of social responsibility. It empowers students and institutions to engage meaningfully with communities.”
+      </p>
+    </div>
+  </main>
+  <footer>
+    <div class="College_Details">
+      <b>CONTACT US</b><br><br>Address : Student Activity  Center, Unnat Bharat Abhiyan ,<br>
+      STVPCET <br> Phone : (+91) +91 - 9423683433<br>Email : uba@svpcet.edu.in
+    </div>
+    <div class="Links">
+      <b>USEFUL LINK</b>
+      <br>
+      <br>
+        <a href="https://www.stvincentngp.edu.in/">SVPCET</a><br>
+        <a href="../index.html">UBA SVPCET</a><br>
+        <a href="">Faculty</a><br>
+        <a href="./deparment/index.html">Student Team</a><br>
+        <a href="./managemnet/management.html">Management Perspectives</a><br>
+        <a href="./managemnet/contact.html">Contact Us</a>
+    </div>
+    <div class="Links">
+      <b>UBA SOCIAL MEDIA </b><br>
+      <br>
+      <a href="">Twitter</a> <br>
+      <a href="https://www.facebook.com/stvincentngp/">Facebook</a><br>
+      <a href="https://www.instagram.com/svpcetnagpur">Instagram</a><br>
+      <a href="https://twitter.com/techpallottines">Youtube</a>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12122.748894828701!2d79.04498698134455!3d21.00251584390992!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bdc6b03bfded%3A0x51964eb66fa3ec5e!2sSt.%20Vincent%20Pallotti%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1735664081310!5m2!1sen!2sin"></iframe>
+  </footer>
+    <div class="Footer_Copyright"> copyright &copy; 2024 all rights reserved | designed by uba Students club 2024 | svpcet</div>
+
+    <script src="JavaScript/Menu_Nevigation.js"></script>
+
+
+  </body>
+</html>
