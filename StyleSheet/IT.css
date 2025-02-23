@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Handjet:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap");
 /*font-family: "Josefin Sans", sans-serif;*/
 /*font-family: "Alfa Slab One", serif;*/
@@ -213,12 +214,19 @@ body {
     align-items: center;
 }
 
-.com h1 {
+.com h1 { 
+  font-size:37px;
+  font-family:  "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  top: 35px;
 
     text-align: center;
 }
 
 .com-img {
+  margin-bottom: 2em;
 
     display: flex;
     justify-content: center;
@@ -226,7 +234,8 @@ body {
 }
 
 .com-img1 {
-
+position: relative;
+top:55px;
     height: 35rem;
     border-radius: 15px;
     box-shadow: 0px 0px 20px 8px grey;
@@ -1163,4 +1172,33 @@ footer {
       width: 13.2rem;
     }
   }
+}
+
+
+.gallery-section {
+  text-align: center;
+  padding: 50px;
+}
+.gallery-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+.gallery img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.gallery img:hover {
+  transform: scale(1.1);
 }

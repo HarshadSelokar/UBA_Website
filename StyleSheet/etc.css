@@ -216,22 +216,32 @@ body {
 }
 
 .com h1 {
+  font-size:30px;
+  font-family:  "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  top: 35px;
 
+    
     text-align: center;
 }
 
 .com-img {
+  margin-bottom: 2em;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    
 }
 
 .com-img1 {
-
-    height: 35rem;
-    border-radius: 15px;
-    box-shadow: 0px 0px 21px 11px grey;
+  position: relative;
+  top:55px;
+      height: 35rem;
+      border-radius: 15px;
+      box-shadow: 0px 0px 20px 8px grey;
 
 }
 
