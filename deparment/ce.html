@@ -14,14 +14,13 @@
   <header class="College_Mission_Info">
     <div class="College_Logo">
       <img src="../images/college/logo.png" alt="College_Logo" />
-    </div>
+    </div>  
     <div class="College_NamePlate">
-      <h1>Unnat Bharat Abhiyan</h1>
-
       <p>
         <b>ST. VINCENT PALLOTTI COLLAGE OF ENGEENIRING AND TECHNOLOGY</b>
         <br /><span>An Autonomous Institute</span>
       </p>
+      <p class="h1">Unnat Bharat Abhiyan</p>
     </div>
     <div class="UBA_Logo">
       <img src="../images/College_Information/UBA_Logo.png" alt="College_NamePlate" />
@@ -38,7 +37,17 @@
       <li><a href="../index.html">Home</a></li>
       <li><a href="../visit/visit.html">Visits Gallery</a></li>
       <li><a href="../managemnet/temp.html">Projects</a></li>
-      <li><a href="../deparment/ce.html">Department</a></li>
+      <li class="dpt-li"><select name="Departments" id="Departments" onchange="openDeptLink()">
+        <option value="" disabled selected>Departments</option>
+        <option value="..\deparment\ce.html">Computer Engineering</option>
+        <option value="..\deparment\IT.html">Information Technology</option>
+        <option value="..\deparment\etc.html">Electronics and Telecommunication</option>
+        <option value="..\deparment\cvl.html">Civil Engineering</option>
+        <option value="..\deparment\bvoc.html">B.Voc</option>
+        <option value="..\deparment\ee.html">Electrical Engineering</option>
+        <option value="..\deparment\me.html">Mechanical Engineering</option>
+      </select>
+    </li>
 
       <select name="villages" id="villages" onchange="openVillageLink()">
         <option value="" disabled selected>Adopt Villages</option>
@@ -325,7 +334,7 @@
   <!-- student section -->
   <section class="student-section">
     <!-- 2024 -->
-    <div id="b-24" class="ss-div active">
+    <div id="b-24" class="ss-div">
       <p>2024 Pass Out Team</p>
       <div class="block">
         <div class="student">
@@ -374,14 +383,7 @@ Fendar
           </h3>
         </div>
 
-        <div class="student">
-          <img class="img-s" src="..\images\ce\gouri.png" alt="student-img">
-          <h3>
-            Gouri
-            Biswas
-            
-          </h3>
-        </div>
+        
 
         <div class="student">
           <img class="img-s" src="..\images\ce\bhumishree.jpg" alt="student-img">
@@ -502,7 +504,7 @@ Bongirwar
     </div>
     <!-- 2026 -->
 
-    <div id="b-26" class="ss-div">
+    <div id="b-26" class="ss-div active">
       <p>2026 Batch Team</p>
       <div class="block">
         <div class="student">
@@ -551,6 +553,15 @@ Bongirwar
           <img class="img-s" src="..\images\ce\Laksh Ikhar.JPG" alt="student-img">
           <h3>
             Laksh Ikhar
+          </h3>
+        </div>
+
+        <div class="student">
+          <img class="img-s" src="..\images\ce\gouri.png" alt="student-img">
+          <h3>
+            Gouri
+            Biswas
+            
           </h3>
         </div>
 

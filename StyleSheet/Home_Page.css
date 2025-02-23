@@ -38,6 +38,7 @@ body {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 28px;
+  margin-bottom: 8px;
 }
 
 .College_NamePlate h1 {
@@ -46,13 +47,21 @@ body {
   font-weight: 100;
 }
 
+.College_NamePlate > .h1 {
+  color: #f7c336;
+  letter-spacing: 2px;
+  font-weight: 100;
+  font-size: 23px;
+  
+}
+
 .College_NamePlate p {
   line-height: 16px;
 }
 
 .College_NamePlate b {
   font-weight: 100;
-  font-size: 16px;
+  font-size: 20px;
   color: #394666;
 }
 
@@ -181,7 +190,7 @@ select option a {
 }
 
 .About_Us p {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .Image_Text {
@@ -205,7 +214,7 @@ select option a {
   padding-top: 40px;
   padding-bottom: 20px;
   padding-right: 60px;
-  font-size: 18px;
+  font-size: 20px;
   text-align: justify;
   align-items: center;
 }
@@ -215,7 +224,7 @@ select option a {
   padding-top: 40px;
   padding-bottom: 20px;
   padding-right: 16px;
-  font-size: 18px;
+  font-size: 20px;
   text-align: justify;
   align-items: center;
 }
@@ -715,6 +724,11 @@ iframe {
   .UBA_Logo img {
     height: 100px;
     width: 100px;
+  }
+
+  .College_NamePlate > .h1 {
+
+    font-size: 17px;
   }
 
   .College_NamePlate h1 {
@@ -1395,6 +1409,10 @@ select {
     margin-right: 15%;
   }
 
+  .Image_Slider{
+
+    padding-bottom: 7rem;
+  }
   .Management_Perspectives {
     width: 70%;
   }
@@ -1418,5 +1436,62 @@ select {
 
   #Image_Two {
     background-image: url("../images/college/collegefont.png");
+  }
+}
+
+
+
+.dpt-li{
+
+
+  select{
+    width: 9rem;
+    border: none;
+  }
+  
+}
+
+
+@media (min-width: 320px) and (max-width: 480px){
+
+
+  .dpt-li{
+
+    padding: 0;
+
+    select{
+
+      width: 13.2rem;
+    }
+  }
+}
+
+
+
+
+
+
+.dpt-li{
+
+
+  select{
+    width: 9rem;
+    border: none;
+  }
+  
+}
+
+
+@media (min-width: 320px) and (max-width: 480px){
+
+
+  .dpt-li{
+
+    padding: 0;
+
+    select{
+
+      width: 13.2rem;
+    }
   }
 }

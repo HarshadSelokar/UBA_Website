@@ -21,12 +21,14 @@
           />
         </div>
         <div class="College_NamePlate">
-          <h1>Unnat Bharat Abhiyan</h1>
+
     
           <p>
             <b>ST. VINCENT PALLOTTI COLLAGE OF ENGEENIRING AND TECHNOLOGY</b>
             <br /><span>An Autonomous Institute</span>
           </p>
+
+          <p class="h1">Unnat Bharat Abhiyan</p>
         </div>
         <div class="UBA_Logo">
           <img
@@ -46,7 +48,17 @@
             <li><a href="../index.html">Home</a></li>
             <li><a href="../visit/visit.html">Visits Gallery</a></li>
             <li><a href="./temp.html">Projects</a></li>
-            <li><a href="../deparment/ce.html">Department</a></li>
+            <li class="dpt-li"><select name="Departments" id="Departments" onchange="openDeptLink()">
+              <option value="" disabled selected>Departments</option>
+              <option value="..\deparment\ce.html">Computer Engineering</option>
+              <option value="..\deparment\IT.html">Information Technology</option>
+              <option value="..\deparment\etc.html">Electronics and Telecommunication</option>
+              <option value="..\deparment\cvl.html">Civil Engineering</option>
+              <option value="..\deparment\bvoc.html">B.Voc</option>
+              <option value="..\deparment\ee.html">Electrical Engineering</option>
+              <option value="..\deparment\me.html">Mechanical Engineering</option>
+            </select>
+          </li>
     
             <select name="villages" id="villages" onchange="openVillageLink()">
               <option value="" disabled selected>Adopt Villages</option>

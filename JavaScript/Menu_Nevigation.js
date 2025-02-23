@@ -9,18 +9,27 @@ function myFunction(x) {
   }
 }
 
-document.getElementById("Village_Port").addEventListener("click", function() {
-  var villages = document.getElementById("Villages");
+// document.getElementById("Village_Port").addEventListener("click", function() {
+//   var villages = document.getElementById("Villages");
 
-  if (villages.style.display === "none" || villages.style.display === "") {
-    villages.style.display = "block";  
-  } else {
-    villages.style.display = "none"; 
-  }
-});
+//   if (villages.style.display === "none" || villages.style.display === "") {
+//     villages.style.display = "block";  
+//   } else {
+//     villages.style.display = "none"; 
+//   }
+// });
 
 function openVillageLink() {
   const select = document.getElementById("villages");
+  const url = select.value;
+  if (url) {
+    window.open(url, '_blank'); 
+  }
+}
+
+
+function openDeptLink() {
+  const select = document.getElementById("Departments");
   const url = select.value;
   if (url) {
     window.open(url, '_blank'); 

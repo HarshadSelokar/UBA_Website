@@ -39,6 +39,7 @@ body {
     text-transform: uppercase;
     font-size: 16px;
     line-height: 28px;
+    margin-bottom: 8px;
   }
   
   .College_NamePlate h1 {
@@ -46,6 +47,15 @@ body {
     letter-spacing: 2px;
     font-weight: 100;
   }
+
+  .College_NamePlate > .h1 {
+    color: #f7c336;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-size: 23px;
+    
+  }
+  
   
   .College_NamePlate p {
     line-height: 16px;
@@ -53,7 +63,7 @@ body {
   
   .College_NamePlate b {
     font-weight: 100;
-    font-size: 16px;
+    font-size: 20px;
     color: #394666;
   }
   
@@ -546,6 +556,11 @@ footer {
       .UBA_Logo img {
         height: 100px;
         width: 100px;
+      }
+    
+      .College_NamePlate > .h1 {
+
+        font-size: 17px;
       }
     
       .College_NamePlate h1 {
@@ -1141,4 +1156,31 @@ footer {
 #villages{
 
   cursor: pointer;
+}
+
+
+
+.dpt-li{
+
+
+  select{
+    width: 9rem;
+    border: none;
+  }
+  
+}
+
+
+@media (min-width: 320px) and (max-width: 480px){
+
+
+  .dpt-li{
+
+    padding: 0;
+
+    select{
+
+      width: 13.2rem;
+    }
+  }
 }
