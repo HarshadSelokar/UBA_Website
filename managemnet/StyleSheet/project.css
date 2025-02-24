@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fffdf0;
+    
     
 }
 .projects-background {
@@ -49,19 +49,19 @@ body {
 /* Background Animation */
 @keyframes slideBackground {
     0%, 20% {
-        background-image: url('/UBA_Website/managemnet/img/pin1pro.jpg');
+        background-image: url('pin1pro.jpg');
     }
     21%, 40% {
-        background-image: url('/UBA_Website/managemnet/img/pin2pro.jpg');
+        background-image: url('pin2pro.jpg');
     }
     41%, 60% {
-        background-image: url('/UBA_Website/managemnet/img/pin3pro.jpg');
+        background-image: url('pin3pro.jpg');
     }
     61%, 80% {
-        background-image: url('/UBA_Website/managemnet/img/pin4pro.jpg');
+        background-image: url('pin4pro.jpg');
     }
     81%, 100% {
-        background-image: url('/UBA_Website/managemnet/img/pin5pro.jpg');
+        background-image: url('pin5pro.jpg');
     }
 }
 
