@@ -14,10 +14,10 @@
   <header class="College_Mission_Info">
     <div class="College_Logo">
       <img src="../images/college/logo.png" alt="College_Logo" />
-    </div>  
+    </div>
     <div class="College_NamePlate">
       <p>
-        <b>ST. VINCENT PALLOTTI COLLEGE OF ENGEENIRING AND TECHNOLOGY</b>
+        <b>ST. VINCENT PALLOTTI COLLEGE OF ENGINEERING AND TECHNOLOGY</b>
         <br /><span>An Autonomous Institute</span>
       </p>
       <p class="h1">Unnat Bharat Abhiyan</p>
@@ -38,16 +38,16 @@
       <li><a href="../visit/visit.html">Visits Gallery</a></li>
       <li><a href="../managemnet/temp.html">Projects</a></li>
       <li class="dpt-li"><select name="Departments" id="Departments" onchange="openDeptLink()">
-        <option value="" disabled selected>Departments</option>
-        <option value="..\deparment\ce.html">Computer Engineering</option>
-        <option value="..\deparment\IT.html">Information Technology</option>
-        <option value="..\deparment\etc.html">Electronics and Telecommunication</option>
-        <option value="..\deparment\cvl.html">Civil Engineering</option>
-        <option value="..\deparment\bvoc.html">B.Voc</option>
-        <option value="..\deparment\ee.html">Electrical Engineering</option>
-        <option value="..\deparment\me.html">Mechanical Engineering</option>
-      </select>
-    </li>
+          <option value="" disabled selected>Departments</option>
+          <option value="..\deparment\ce.html">Computer Engineering</option>
+          <option value="..\deparment\IT.html">Information Technology</option>
+          <option value="..\deparment\etc.html">Electronics and Telecommunication</option>
+          <option value="..\deparment\cvl.html">Civil Engineering</option>
+          <option value="..\deparment\bvoc.html">B.Voc</option>
+          <option value="..\deparment\ee.html">Electrical Engineering</option>
+          <option value="..\deparment\me.html">Mechanical Engineering</option>
+        </select>
+      </li>
 
       <select name="villages" id="villages" onchange="openVillageLink()">
         <option value="" disabled selected>Adopt Villages</option>
@@ -108,7 +108,7 @@
         </a>
       </li>
 
-      <!-- <li>
+      <li>
         <button onclick=toggleSubMenu(this) class="dropdown-btn">
           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
             <path
@@ -122,14 +122,10 @@
         </button>
         <ul class="sub-menu">
           <div>
-            <li><a onclick="showSection('b-24')">2024</a></li>
-            <li><a onclick="showSection('b-25')">2025</a></li>
-            <li><a onclick="showSection('b-26')">2026</a></li>
-
-
-          </div>
+            <li><a onclick="showSection('b-24')">Team Members</a></li>
+           </div>
         </ul>
-      </li> -->
+      </li>
       <li>
         <a href="photos.html">
           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
@@ -146,10 +142,12 @@
     <h1>DEPARTMENT OF CIVIL ENGINEERING</h1>
 
     <div class="com-img">
-      <img class="com-img1" src="" alt="" />
+      <img class="com-img1" src="..\images\civil\civil-grp.jpeg" alt="" />
     </div>
   </section>
-  <!-- Virtual Doctor -->
+
+
+  <!-- Project -->
   <section class="content">
     <section id="section-a" class="section active">
       <div class="ce1">
@@ -194,462 +192,77 @@
         </div>
       </div>
     </section>
-    <!-- Pharmacy Module
-    <section id="section-b" class="section">
-      <div class="ce1">
-        <h2 style="text-align: center">
-          The Pharmacy Module streamlines access to medicines in rural areas
-          by connecting patients with local pharmacies. It simplifies ordering
-          and prescription management, ensuring timely delivery of essential
-          medications, addressing the lack of healthcare infrastructure in
-          villages.
-        </h2>
 
-        <div class="info-block">
-          <div class="info-img">
-            <img class="info-img1" src="ph1.png" alt="" />
-          </div>
-          <div class="info">
-            <ol type="1">
-              <li type="1">
-                <b>Medicine Selection</b><br />Villagers (Patients) can browse
-                or search for medicines by name or category through the app.
-              </li>
-              <li>
-                <b>User Registration</b><br />Villagers (Patients) can
-                register as users, while pharmacies can register in admin mode
-                for managing orders and stock.
-              </li>
-              <li>
-                <b>Secure Login</b><br />Villagers (Patients) can log in using
-                biometric authentication or Google verification for secure
-                access.
-              </li>
-              <li>
-                <b>Profile Management</b><br />Villagers (Patients) can manage
-                personal details, track order history, and update contact
-                information.
-              </li>
-              <li>
-                <b>Data Management</b><br />Admins (Pharmacies) can manage
-                medicine details such as name, price, description, and images,
-                with data securely stored using Firebase Database.
-              </li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!--Seed Sowing -->
-    <section id="section-b" class="section">
-      <div class="ce1">
-        <h2 style="text-align: center">
-          Description of Project
-          With this project, users can streamline the process of seed sowing with enhanced efficiency and precision.
-          Module details are as follows:
-        </h2>
-
-        <div class="info-block">
-          <div class="info-img">
-            <img class="info-img1" src="#" alt="" />
-          </div>
-          <div class="info">
-            <ol type="1">
-              <li type="1">
-                <b>Automated Seed Sowing</b><br />The bot sows seeds systematically, ensuring optimal spacing and depth
-                for better crop growth.
-              </li>
-              <li>
-                <b>Remote Control</b><br />Users can control the bot remotely using a dedicated app or interface for
-                field operations.
-              </li>
-              <li>
-                <b>Navigation and Mapping</b><br />The bot uses sensors and mapping technology to navigate fields and
-                cover designated areas.
-              </li>
-              <li>
-                <b>Adjustable Seed Parameters</b><br />Parameters like seed type, sowing rate, and depth can be adjusted
-                according to user requirements.
-              </li>
-              <li>
-                <b>Real-time Monitoring</b><br />Provides real-time updates on the sowing process, including areas
-                covered and time remaining.
-              </li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </section>
   </section>
 
-  <!-- <div id="scrollDiv" class="scroll-div">
-        <div class="ftr">
-            <input type="checkbox" class="checkbox" id="menu-toggle" />
-            <span class="button-menu"></span>
-      
-            <button class="option-a opt" onclick="showSection('section-a')">Doctor Module</button>
-            <button class="option-b opt" onclick="showSection('section-b')">Pharmacy Module</button>
-            <button class="option-c opt" onclick="showSection('section-c')">Patient Module</button>
-          </div>
-    </div> -->
 
 
 
   <!-- student section -->
   <section class="student-section">
     <!-- 2024 -->
-    <div id="b-24" class="ss-div">
-      <p>2024 Pass Out Team</p>
+    <div id="b-24" class="ss-div active">
+      <p>Team members</p>
       <div class="block">
         <div class="student">
-          <img class="img-s" src="..\images\ce\mayank.jpg" alt="student-img">
+          <img class="img-s" src="..\images\civil\tanay_wath.png" alt="student-img">
           <h3>
-            Mayank Tambe
+            Tanay Wath
           </h3>
         </div>
 
         <div class="student">
-          <img class="img-s" src="..\images\ce\barnabas.jpg" alt="student-img">
+          <img class="img-s" src="..\images\civil\Megha_Bawanthade.png" alt="student-img">
           <h3>
-            Barbanas Johnson
-
+            Megha Bawanthade
           </h3>
         </div>
 
         <div class="student">
-          <img class="img-s" src="..\images\ce\aadarsh.jpg" alt="student-img">
+          <img class="img-s" src="..\images\civil\Prachi_Ninawe.png" alt="student-img">
           <h3>
-            Aadarsh Jain
+            Prachi Ninawe
           </h3>
         </div>
 
         <div class="student">
-          <img class="img-s" src="..\images\ce\prasad.jpg" alt="student-img">
+          <img class="img-s" src="..\images\civil\Ajinkya_kshirsagar.png" alt="student-img">
           <h3>
-            Prasad
-            Gomkale
+            Ajinkya Kshirsagar
           </h3>
         </div>
 
         <div class="student">
-          <img class="img-s" src="..\images\ce\aditya.jpg" alt="student-img">
+          <img class="img-s" src="..\images\civil\Ayush_kolhe.png" alt="student-img">
           <h3>
-            Aditya
-Wandile
+            Ayush Kolhe
           </h3>
         </div>
 
-        <div class="student">
-          <img class="img-s" src="..\images\ce\kalyani.jpg" alt="student-img">
-          <h3>
-            Kalyani
-Fendar
-          </h3>
-        </div>
 
-        
 
-        <div class="student">
-          <img class="img-s" src="..\images\ce\bhumishree.jpg" alt="student-img">
-          <h3>
-            Bhumishree
-          </h3>
-        </div>
-        <div class="student">
-          <img class="img-s" src="..\images\ce\kunal.jpg" alt="student-img">
-          <h3>
-            Kunal
-Wadibhasme
-          </h3>
-        </div>
-
-        <div class="student">
-          <img class="img-s" src="..\images\ce\sahil.jpg" alt="student-img">
-          <h3>
-            Sahil
-            Pancham
-            
-          </h3>
-        </div>
-
-        <div class="student">
-          <img class="img-s" src="..\images\ce\Swapnil Kumbhare.jpeg" alt="student-img">
-          <h3>
-            Swapnil Kumbhare
-          </h3>
-        </div>
-
-        <div class="student">
-          <img class="img-s" src="..\images\ce\vedant.jpg" alt="student-img">
-          <h3>
-            Vedant
-Nisar
-
-          </h3>
-        </div>
 
       </div>
     </div>
 
-    <!-- 2025 -->
-    <div id="b-25" class="ss-div">
-      <p>2025 Batch Team</p>
-      <div class="block">
-        <div class="student">
-          <img class="img-s" src="..\images\ce\sameer.jpg" alt="student-img">
-          <h3>
-            Sameer
-            Bawane
-          </h3>
-        </div>
-
-        <div class="student">
-          <img class="img-s" src="..\images\ce\parth.jpg" alt="student-img">
-          <h3>
-            Parth
-Bhelonde
-          </h3>
-        </div>
-
-        <div class="student">
-          <img class="img-s" src="..\images\ce\naina makhijani.jpg" alt="student-img">
-          <h3>
-            Naina Makhijani
-          </h3>
-        </div>
-
-        <div class="student">
-          <img class="img-s" src="..\images\ce\rajlin.jpg" alt="student-img">
-          <h3>
-            Rajlin
-Kaur Virdi
-          </h3>
-        </div>
-
-        <div class="student">
-          <img class="img-s" src="..\images\ce\pranav.jpg" alt="student-img">
-          <h3>
-            Pranav Atey
-          </h3>
-        </div>
-
-        <div class="student">
-          <img class="img-s" src="..\images\ce\shatakshi.jpg" alt="student-img">
-          <h3>
-            Shatakshi
-            Kokate
-          </h3>
-        </div>
-
-        <div class="student">
-          <img class="img-s" src="..\images\ce\shubharti.jpg" alt="student-img">
-          <h3>
-            Shubharthi
-Wanjari
-          </h3>
-        </div>
-
-
-        <div class="student">
-          <img class="img-s" src="..\images\ce\shruti.jpg" alt="student-img">
-          <h3>
-            Shruti
-Bongirwar
-          </h3>
-        </div>
-        <div class="student">
-          <img class="img-s" src="..\images\ce\yamini.jpg" alt="student-img">
-          <h3>
-            Yamini
-            Mirashe
-          </h3>
-        </div>
-      </div>
-    </div>
-    <!-- 2026 -->
-
-    <div id="b-26" class="ss-div active">
-      <p>2026 Batch Team</p>
-      <div class="block">
-        <div class="student">
-          <img class="img-s" src="..\images\ce\Parth Upadhye.jpg" alt="student-img">
-          <h3>
-            Parth Upadhye
-          </h3>
-        </div>
-
-        <div class="student">
-          <img class="img-s" src="..\images\ce\Saurabh wankhede.jpg" alt="student-img">
-          <h3>
-            Saurabh Wankhede
-          </h3>
-        </div>
-
-        <div class="student">
-          <img class="img-s" src="..\images\ce\Rajas Tarapure.jpg" alt="student-img">
-          <h3>
-            Rajas Tarapure
-          </h3>
-        </div>
-
-        <div class="student">
-          <img class="img-s" src="..\images\ce\Meet Shivhare_.jpg" alt="student-img">
-          <h3>
-            Meet Shivhare
-          </h3>
-        </div>
-
-        <div class="student">
-          <img class="img-s" src="..\images\ce\nakul.jpg" alt="student-img">
-          <h3>
-            Nakul Tarmarkar
-          </h3>
-        </div>
-
-        <div class="student">
-          <img class="img-s" src="..\images\ce\Aayush Jibhkate.jpg" alt="student-img">
-          <h3>
-            Ayush Jibhkate
-          </h3>
-        </div>
-
-        <div class="student">
-          <img class="img-s" src="..\images\ce\Laksh Ikhar.JPG" alt="student-img">
-          <h3>
-            Laksh Ikhar
-          </h3>
-        </div>
-
-        <div class="student">
-          <img class="img-s" src="..\images\ce\gouri.png" alt="student-img">
-          <h3>
-            Gouri
-            Biswas
-            
-          </h3>
-        </div>
-
-        <div class="student">
-          <img class="img-s" src="..\images\ce\PratikshaGhate.jpg" alt="student-img">
-          <h3>
-            Pratiksha Ghate
-          </h3>
-        </div>
-
-        <div class="student">
-          <img class="img-s" src="..\images\ce\Samiksha Dhawas.jpg" alt="student-img">
-          <h3>
-            Samiksha Dhawas
-          </h3>
-        </div>
-
-        <div class="student">
-          <img class="img-s" src="..\images\ce\IMG-20240520-WA0019.jpg" alt="student-img">
-          <h3>
-            Tejasi Rinait
-          </h3>
-        </div>
-
-      </div>
-    </div>
-
-
-    <div id="b-27" class="ss-div">
-      <p>2027 Batch Team</p>
-      <div class="block">
-        <div class="student">
-          <img class="img-s" src="ce/" alt="student-img">
-          <h3>
-            Parth Upadhye
-          </h3>
-        </div>
-
-        <div class="student">
-          <img class="img-s" src="ce/Saurabh wankhede.jpg" alt="student-img">
-          <h3>
-            Saurabh Wankhede
-          </h3>
-        </div>
-
-        <div class="student">
-          <img class="img-s" src="ce/Rajas Tarapure.jpg" alt="student-img">
-          <h3>
-            Rajas Tarapure
-          </h3>
-        </div>
-
-        <div class="student">
-          <img class="img-s" src="ce/Meet Shivhare_.jpg" alt="student-img">
-          <h3>
-            Meet Shivhare
-          </h3>
-        </div>
-
-        <div class="student">
-          <img class="img-s" src="ce/nakul.jpg" alt="student-img">
-          <h3>
-            Nakul Tarmarkar
-          </h3>
-        </div>
-
-        <div class="student">
-          <img class="img-s" src="ce/Aayush Jibhkate.jpg" alt="student-img">
-          <h3>
-            Ayush Jibhkate
-          </h3>
-        </div>
-
-        <div class="student">
-          <img class="img-s" src="ce/Laksh Ikhar.JPG" alt="student-img">
-          <h3>
-            Laksh Ikhar
-          </h3>
-        </div>
-
-        <div class="student">
-          <img class="img-s" src="ce/PratikshaGhate.jpg" alt="student-img">
-          <h3>
-            Pratiksha Ghate
-          </h3>
-        </div>
-
-        <div class="student">
-          <img class="img-s" src="ce/Samiksha Dhawas.jpg" alt="student-img">
-          <h3>
-            Samiksha Dhawas
-          </h3>
-        </div>
-
-        <div class="student">
-          <img class="img-s" src="ce/IMG-20240520-WA0019.jpg" alt="student-img">
-          <h3>
-            Tejasi Rinait
-          </h3>
-        </div>
-
-        <div class="student">
-          <img class="img-s" src="ce/Laksh Ikhar.JPG" alt="student-img">
-          <h3>
-            Laksh Ikhar
-          </h3>
-        </div>
-
-      </div>
-    </div>
   </section>
 
   <section class="gallery-section" id="gallery-section">
     <h2> Gallery</h2>
     <div class="gallery">
-        <img src="..\img\WhatsApp Image 2025-02-23 at 16.40.32_41edafda.jpg" alt="Nature">
-        <img src="..\images\ce\group_photo.jpg" alt="Mountain">
-        
-        <img src="..\img\WhatsApp Image 2023-02-01 at 9.22.19 AM (1).jpeg.jpg" alt="Forest">
-       
+      <img src="..\images\civil\cvl-gp1.jpeg" alt="gp1">
+      <img src="..\images\civil\cvl-gp2.jpeg" alt="gp2">
+      <img src="..\images\civil\cvl-gp3.jpeg" alt="gp3">
+
 
     </div>
-</section>
+  </section>
+
+  <!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <img id="lightbox-img" src="" alt="Expanded Image">
+</div>
 
   <footer>
     <div class="College_Details">
@@ -785,6 +398,20 @@ Bongirwar
     }
 
 
+    const galleryImages = document.querySelectorAll('.gallery img');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        galleryImages.forEach(img => {
+            img.addEventListener('click', () => {
+                lightbox.style.display = 'flex';
+                lightboxImg.src = img.src;
+            });
+        });
+
+        function closeLightbox() {
+            lightbox.style.display = 'none';
+        }
 
   </script>
 </body>

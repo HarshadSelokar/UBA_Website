@@ -1156,6 +1156,23 @@ footer {
 
 
 
+
+@media (min-width: 320px) and (max-width: 480px){
+
+
+  .dpt-li{
+
+    padding: 0;
+
+    select{
+
+      width: 13.2rem;
+    }
+  }
+}
+
+
+
 .gallery-section {
   text-align: center;
   padding: 50px;
@@ -1221,19 +1238,4 @@ footer {
     border: none;
   }
   
-}
-
-
-@media (min-width: 320px) and (max-width: 480px){
-
-
-  .dpt-li{
-
-    padding: 0;
-
-    select{
-
-      width: 13.2rem;
-    }
-  }
 }

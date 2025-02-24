@@ -22,7 +22,7 @@
      
 
       <p>
-        <b>ST. VINCENT PALLOTTI COLLAGE OF ENGINEERING AND TECHNOLOGY</b>
+        <b>ST. VINCENT PALLOTTI COLLEGE OF ENGINEERING AND TECHNOLOGY</b>
         <br /><span>An Autonomous Institute</span>
       </p>
       <p class="h1">Unnat Bharat Abhiyan</p>
@@ -473,6 +473,13 @@ With this project, users can streamline the process of seed sowing with enhanced
     </div>
 </section>
 
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <img id="lightbox-img" src="" alt="Expanded Image">
+</div>
+
+
 
   <footer>
     <div class="College_Details">
@@ -605,7 +612,20 @@ With this project, users can streamline the process of seed sowing with enhanced
       })
     }
 
+    const galleryImages = document.querySelectorAll('.gallery img');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
 
+        galleryImages.forEach(img => {
+            img.addEventListener('click', () => {
+                lightbox.style.display = 'flex';
+                lightboxImg.src = img.src;
+            });
+        });
+
+        function closeLightbox() {
+            lightbox.style.display = 'none';
+        }
 
   </script>
 
