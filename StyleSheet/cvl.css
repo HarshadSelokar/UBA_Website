@@ -410,7 +410,7 @@ body {
 
         img {
             display: flex;
-            height: 15rem;
+            height: 18rem;
             margin-left: 10px;
             margin-right: 10px;
         }
@@ -662,7 +662,11 @@ footer {
 
     .com-img1 {
 
-        height: 17rem;
+        height: 13rem;
+    }
+    .com h1{
+
+      font-size: 33px;
     }
 
     .content {
@@ -731,7 +735,7 @@ footer {
 
     .img-s {
 
-        height: 10rem;
+        height: 14rem;
 
     }
 
