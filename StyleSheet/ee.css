@@ -511,6 +511,7 @@ footer {
   
   .Links a {
     color: white;
+    text-decoration: none;
   }
   
   .Links,
