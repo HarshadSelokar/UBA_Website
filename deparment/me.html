@@ -45,17 +45,18 @@
       <li><a href="../index.html">Home</a></li>
       <li><a href="../visit/visit.html">Visits Gallery</a></li>
       <li><a href="./temp.html">Projects</a></li>
-      <li class="dpt-li"><select name="Departments" id="Departments" onchange="openDeptLink()">
-        <option value="" disabled selected>Departments</option>
-        <option value="..\deparment\ce.html">Computer Engineering</option>
-        <option value="..\deparment\IT.html">Information Technology</option>
-        <option value="..\deparment\etc.html">Electronics and Telecommunication</option>
-        <option value="..\deparment\cvl.html">Civil Engineering</option>
-        <option value="..\deparment\bvoc.html">B.Voc</option>
-        <option value="..\deparment\ee.html">Electrical Engineering</option>
-        <option value="..\deparment\me.html">Mechanical Engineering</option>
-      </select>
-    </li>
+      <li class="dpt-li">
+        <select name="Departments" id="Departments" onchange="openDeptLink()">
+          <option value="" disabled selected>Departments</option>
+          <option value="..\deparment\ce.html">Computer Engineering</option>
+          <option value="..\deparment\IT.html">Information Technology</option>
+          <option value="..\deparment\etc.html">Electronics and Telecommunication</option>
+          <option value="..\deparment\cvl.html">Civil Engineering</option>
+          <option value="..\deparment\bvoc.html">B.Voc</option>
+          <option value="..\deparment\ee.html">Electrical Engineering</option>
+          <option value="..\deparment\me.html">Mechanical Engineering</option>
+        </select>
+      </li>
 
       <select name="villages" id="villages" onchange="openVillageLink()">
         <option value="" disabled selected>Adopt Villages</option>
@@ -73,121 +74,6 @@
 
   
 
-  <!-- DPT-SECTION -->
-  <section class="d-section">
-    <div class="option">
-      <div class="box">
-        <a href="..\deparment\ce.html"><img src="..\images\dpt-pg-assets\ce-img.png" alt="" /></a>
-      </div>
-
-      <div class="box">
-        <a href="..\deparment\IT.html"><img src="..\images\dpt-pg-assets\it-img.png" alt="" /></a>
-      </div>
-
-      <div class="box">
-        <a href="..\deparment\me.html"><img src="..\images\dpt-pg-assets\me-img.png" alt="" /></a>
-      </div>
-
-      <div class="box">
-        <a href="..\deparment\cvl.html"><img src="..\images\dpt-pg-assets\cvl-img.png" alt="" /></a>
-      </div>
-
-      <div class="box">
-        <a href="..\deparment\etc.html"><img src="..\images\dpt-pg-assets\etc-img.png" alt="" /></a>
-      </div>
-      
-      <div class="box">
-        <a href="..\deparment\ee.html"><img src="..\images\dpt-pg-assets\ee-img.png" alt="" /></a>
-      </div>
-    </div>
-  </section>
-
-
-
-
-  <div id="sidebar" class="close">
-    <ul>
-      <li>
-        <span class="logo">Menu</span>
-        <button onclick=toggleSidebar() id="toggle-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-            <path
-              d="m313-480 155 156q11 11 11.5 27.5T468-268q-11 11-28 11t-28-11L228-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 27.5-11.5T468-692q11 11 11 28t-11 28L313-480Zm264 0 155 156q11 11 11.5 27.5T732-268q-11 11-28 11t-28-11L492-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 27.5-11.5T732-692q11 11 11 28t-11 28L577-480Z" />
-          </svg>
-        </button>
-      </li>
-
-
-      <li>
-        <button onclick=toggleSubMenu(this) class="dropdown-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-            <path
-              d="M240-200h120v-200q0-17 11.5-28.5T400-440h160q17 0 28.5 11.5T600-400v200h120v-360L480-740 240-560v360Zm-80 0v-360q0-19 8.5-36t23.5-28l240-180q21-16 48-16t48 16l240 180q15 11 23.5 28t8.5 36v360q0 33-23.5 56.5T720-120H560q-17 0-28.5-11.5T520-160v-200h-80v200q0 17-11.5 28.5T400-120H240q-33 0-56.5-23.5T160-200Zm320-270Z" />
-          </svg>
-          <span>About Project</span>
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-            <path
-              d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z" />
-          </svg>
-        </button>
-        <ul class="sub-menu">
-          <div>
-            <li><a onclick="showProject('section-a')">Smart Solar Street Lamp</a></li>
-            <li><a onclick="showProject('section-b')">Agricultural Drone</a></li>
-            <li><a onclick="showProject('section-c')">E-Bicycle Project</a></li>
-            <li><a onclick="showProject('section-d')">Security Systems</a></li>
-          </div>
-        </ul>
-      </li>
-
-
-      <li>
-        <a href="project-document.html">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-            <path
-              d="M520-640v-160q0-17 11.5-28.5T560-840h240q17 0 28.5 11.5T840-800v160q0 17-11.5 28.5T800-600H560q-17 0-28.5-11.5T520-640ZM120-480v-320q0-17 11.5-28.5T160-840h240q17 0 28.5 11.5T440-800v320q0 17-11.5 28.5T400-440H160q-17 0-28.5-11.5T120-480Zm400 320v-320q0-17 11.5-28.5T560-520h240q17 0 28.5 11.5T840-480v320q0 17-11.5 28.5T800-120H560q-17 0-28.5-11.5T520-160Zm-400 0v-160q0-17 11.5-28.5T160-360h240q17 0 28.5 11.5T440-320v160q0 17-11.5 28.5T400-120H160q-17 0-28.5-11.5T120-160Zm80-360h160v-240H200v240Zm400 320h160v-240H600v240Zm0-480h160v-80H600v80ZM200-200h160v-80H200v80Zm160-320Zm240-160Zm0 240ZM360-280Z" />
-          </svg>
-          <span>Project Aproved Document</span>
-
-        </a>
-      </li>
-
-      <li>
-        <button onclick=toggleSubMenu(this) class="dropdown-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-            <path
-              d="m221-313 142-142q12-12 28-11.5t28 12.5q11 12 11 28t-11 28L250-228q-12 12-28 12t-28-12l-86-86q-11-11-11-28t11-28q11-11 28-11t28 11l57 57Zm0-320 142-142q12-12 28-11.5t28 12.5q11 12 11 28t-11 28L250-548q-12 12-28 12t-28-12l-86-86q-11-11-11-28t11-28q11-11 28-11t28 11l57 57Zm339 353q-17 0-28.5-11.5T520-320q0-17 11.5-28.5T560-360h280q17 0 28.5 11.5T880-320q0 17-11.5 28.5T840-280H560Zm0-320q-17 0-28.5-11.5T520-640q0-17 11.5-28.5T560-680h280q17 0 28.5 11.5T880-640q0 17-11.5 28.5T840-600H560Z" />
-          </svg>
-          <span>Team</span>
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-            <path
-              d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z" />
-          </svg>
-        </button>
-        <ul class="sub-menu">
-          <div>
-            <li><a onclick="showSection('b-24')">2024</a></li>
-            <li><a onclick="showSection('b-25')">2025</a></li>
-            <li><a onclick="showSection('b-26')">2026</a></li>
-            <!--<li><a onclick="showSection('b-27')">2027</a></li>-->
-            <!-- <li><a onclick="showSection('b-22')">2027</a></li> -->
-
-          </div>
-        </ul>
-      </li>
-      <li>
-        <a href="#gallery-section">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-            <path
-              d="M520-640v-160q0-17 11.5-28.5T560-840h240q17 0 28.5 11.5T840-800v160q0 17-11.5 28.5T800-600H560q-17 0-28.5-11.5T520-640ZM120-480v-320q0-17 11.5-28.5T160-840h240q17 0 28.5 11.5T440-800v320q0 17-11.5 28.5T400-440H160q-17 0-28.5-11.5T120-480Zm400 320v-320q0-17 11.5-28.5T560-520h240q17 0 28.5 11.5T840-480v320q0 17-11.5 28.5T800-120H560q-17 0-28.5-11.5T520-160Zm-400 0v-160q0-17 11.5-28.5T160-360h240q17 0 28.5 11.5T440-320v160q0 17-11.5 28.5T400-120H160q-17 0-28.5-11.5T120-160Zm80-360h160v-240H200v240Zm400 320h160v-240H600v240Zm0-480h160v-80H600v80ZM200-200h160v-80H200v80Zm160-320Zm240-160Zm0 240ZM360-280Z" />
-          </svg><span>Photos</span>
-
-
-
-        </a>
-      </li>
-    </ul>
-  </div>
 
   <section class="com">
     <h1>DEPARTMENT OF MECHANICAL ENGINEERING</h1>
