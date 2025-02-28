@@ -552,9 +552,9 @@ footer {
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-  .College_Mission_Info {
-    display: flex;
-  }
+    .College_Mission_Info {
+      display: flex;
+    }
       .College_Logo {
         display: flex;
         justify-content: center;
