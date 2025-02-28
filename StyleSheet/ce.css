@@ -270,13 +270,7 @@ body {
 }
 .ss-div{
 
-    display: none;
-}
-
-.ss-div.active {
     display: block;
-    opacity: 1;
-    transform: scale(1);
 }
 
 /* Floating Button Styles */
@@ -518,6 +512,13 @@ footer {
     color: #ffdc5f;
   }
   
+  .sevapp{
+    position: relative;
+    right: 300px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: x-large;
+
+  }
   .Footer_Copyright {
     height: 3.5rem;
     background-color: #f5c400;
