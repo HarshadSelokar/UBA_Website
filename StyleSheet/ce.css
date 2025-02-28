@@ -15,11 +15,22 @@ body {
     font-family: "Josefin Sans", sans-serif;
 }
 
+.svp{
+
+  font-size: 45px;
+}
+.cet{
+
+  font-size: 20px;
+
+}
+
 
 .College_Mission_Info {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
   }
   
   .College_Logo img {
@@ -52,17 +63,18 @@ body {
     color: #f7c336;
     letter-spacing: 2px;
     font-weight: 100;
-    font-size: 23px;
+    font-size: 32px;
+    margin-top: 0;
     
   }
   
   .College_NamePlate p {
-    line-height: 16px;
+    line-height: 19px;
   }
   
   .College_NamePlate b {
     font-weight: 100;
-    font-size: 20px;
+    /* font-size: 20px; */
     color: #394666;
   }
   
@@ -251,23 +263,19 @@ body {
 }
 
 .section {
-    display: none;
+    display: grid;
     padding: 30px;
     border: 2px solid #2f2f2f;
     box-shadow: 0px 0px 26px 8px grey;
     font-size: 15px;
     border-radius: 10px;
     background-color: #fff;
-    opacity: 0;
+    
     transform: scale(0.95);
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
-.section.active {
-    display: block;
-    opacity: 1;
-    transform: scale(1);
-}
+
 .ss-div{
 
     display: block;
@@ -539,7 +547,7 @@ footer {
 @media (min-width: 320px) and (max-width: 480px) {
 
     .College_Mission_Info {
-        display: inline-block;
+        display: flex;
       }
     
       .College_Logo {
@@ -560,6 +568,16 @@ footer {
       .College_Logo img {
         /* height: 90px;
         width: 90px; */
+      }
+
+      .svp{
+
+        font-size: 25px;
+      }
+      .cet{
+      
+        font-size: 11px;
+      
       }
 
       .College_NamePlate > .h1 {
@@ -583,7 +601,7 @@ footer {
     
       .College_NamePlate b {
         font-weight: 100;
-        font-size: 12px;
+       
         color: #394666;
       }
     
@@ -753,7 +771,7 @@ footer {
       }
     
       .College_Mission_Info {
-        display: inline;
+        display: flex;
     
         padding-left: 10px;
         padding-right: 10px;
@@ -789,6 +807,16 @@ footer {
         width: 126px;
       }
     
+
+      .svp{
+
+        font-size: 25px;
+      }
+      .cet{
+      
+        font-size: 11px;
+      
+      }
       .College_NamePlate h1 {
         font-size: 22px;
         line-height: 28px;
@@ -800,7 +828,7 @@ footer {
     
       .College_NamePlate b {
         font-weight: 100;
-        font-size: 14px;
+        /* font-size: 14px; */
         color: #394666;
       }
     
