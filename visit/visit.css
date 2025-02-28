@@ -736,7 +736,9 @@ iframe {
         width: 80%;
     }
 }
-
+.Links > a{
+    text-decoration: none;
+}
 
 
 @media (min-width: 834px) and (max-width: 1024px) {
