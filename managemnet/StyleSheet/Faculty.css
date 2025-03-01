@@ -4,12 +4,36 @@
 /*font-family: "Alfa Slab One", serif;*/
 
 
+body {
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  font-size: 1rem;
+  height: 100%;
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+
+.svp{
+
+  font-size: 45px;
+}
+.cet{
+
+  font-size: 20px;
+
+}
 
 .College_Mission_Info {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-}
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+  }
 
 .College_Logo img {
   /* height: 110px;
@@ -28,7 +52,7 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 28px;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
 }
 
 .College_NamePlate h1 {
@@ -40,16 +64,18 @@
   color: #f7c336;
   letter-spacing: 2px;
   font-weight: 100;
-  font-size: 23px;
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .College_NamePlate p {
-  line-height: 16px;
+  line-height: 19px;
 }
 
 .College_NamePlate b {
   font-weight: 100;
-  font-size: 20px;
+  /* font-size: 20px; */
   color: #394666;
 }
 
@@ -549,7 +575,7 @@ iframe {
 
 @media (min-width: 320px) and (max-width: 480px) {
   .College_Mission_Info {
-    display: inline-block;
+    display: flex;
   }
 
   .College_Logo {
@@ -577,6 +603,15 @@ iframe {
     width: 100px;
   }
 
+  .svp{
+
+    font-size: 25px;
+  }
+  .cet{
+  
+    font-size: 11px;
+  
+  }
   
   .College_NamePlate > .h1 {
 
@@ -594,7 +629,7 @@ iframe {
 
   .College_NamePlate b {
     font-weight: 100;
-    font-size: 12px;
+    /* font-size: 12px; */
     color: #394666;
   }
 
@@ -804,7 +839,7 @@ iframe {
   }
 
   .College_Mission_Info {
-    display: inline;
+    display: flex;
 
     padding-left: 10px;
     padding-right: 10px;
@@ -835,6 +870,18 @@ iframe {
     width: 110px; */
   }
 
+
+    
+  .svp{
+
+    font-size: 25px;
+  }
+  .cet{
+  
+    font-size: 11px;
+  
+  }
+  
   .UBA_Logo img {
     height: 126px;
     width: 126px;
